@@ -1,0 +1,61 @@
+{
+  "_comentario": "Página Contacto. Fuente: insumos/negocio/01-evolucion-contenido-web.txt (sección 8) + datos oficiales del manual de marca.",
+  "meta": {
+    "titulo": "Contacto — CONAMIC",
+    "descripcion": "Tu sede gremial está a un mensaje de distancia. Escríbenos desde cualquier rincón de Colombia: defensa legal, apoyo rural, formalización o crédito."
+  },
+  "hero": {
+    "encabezado": "Contacto",
+    "titulo": "Tu voz importa. Estamos aquí para escucharte.",
+    "texto": "No importa si estás en la vereda más lejana o en el centro de la ciudad más grande, tu opinión y tus necesidades son la brújula que guía nuestro trabajo.",
+    "imagen": "/img/hero-contacto.jpg",
+    "imagenAlt": "Equipo CONAMIC atendiendo a los microempresarios en sus canales de contacto"
+  },
+  "canales": [
+    {
+      "icono": "map-pin",
+      "titulo": "Sede Nacional",
+      "valor": "Carrera 24 # 86 A 20, Bogotá D.C."
+    },
+    {
+      "icono": "phone",
+      "titulo": "Teléfono / WhatsApp",
+      "valor": "+57 (313) 418 4390"
+    },
+    {
+      "icono": "mail",
+      "titulo": "Correo",
+      "valor": "gerencia@conamic.org"
+    },
+    {
+      "icono": "clock",
+      "titulo": "Horario",
+      "valor": "Lunes a viernes · 8:00 a.m. – 5:00 p.m."
+    }
+  ],
+  "formulario": {
+    "titulo": "Cuéntanos qué necesitas.",
+    "asuntos": [
+      "¿Necesito defensa o asesoría legal?",
+      "¿Busco apoyo para mi negocio rural?",
+      "¿Quiero formalizarme sin morir en el intento?",
+      "¿Cómo accedo a créditos de fomento?"
+    ],
+    "campos": {
+      "nombre": "Nombre completo *",
+      "correo": "Correo electrónico *",
+      "telefono": "Teléfono / WhatsApp *",
+      "municipio": "Municipio / Ciudad *",
+      "asunto": "¿Qué necesitas? *",
+      "mensaje": "Cuéntanos más (opcional)"
+    },
+    "aceptaTratamiento": "Autorizo el tratamiento de mis datos personales según la política de CONAMIC.",
+    "boton": "Enviar mensaje"
+  },
+  "ctaAfiliacion": {
+    "titulo": "¿Prefieres dar el paso directo?",
+    "texto": "Si ya estás listo para unirte a la red que protege al 99.6%, ve directo al registro de afiliación.",
+    "botonTexto": "Quiero afiliarme",
+    "botonHref": "/afiliacion"
+  }
+}

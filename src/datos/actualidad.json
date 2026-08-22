@@ -1,0 +1,383 @@
+{
+  "_comentario": "Página Actualidad (blog). Fuente: insumos/negocio/01-evolucion-contenido-web.txt (sección 7). Los 3 artículos iniciales son borradores de portada; el contenido completo se redactará con el módulo blog.",
+  "meta": {
+    "titulo": "Actualidad — CONAMIC",
+    "descripcion": "Conocimiento práctico para tu día a día: guías, casos de éxito y análisis normativo para el microempresario colombiano."
+  },
+  "hero": {
+    "encabezado": "Actualidad",
+    "titulo": "Conocimiento práctico para tu día a día.",
+    "texto": "Aquí no encontrarás teorías complicadas. Encuentra guías claras, alertas sobre cambios normativos e historias reales de microempresarios que ya están transformando su realidad. Tu centro de fortalecimiento."
+  },
+  "categorias": [
+    "Todas",
+    "Guías Prácticas",
+    "Casos de Éxito",
+    "Análisis Normativo",
+    "Vida Gremial"
+  ],
+  "articulos": [
+    {
+      "titulo": "El Gran Encuentro del 99.6%: la voz de las 5 zonas será una sola",
+      "slug": "gran-encuentro-del-99-6-por-ciento",
+      "categoria": "Vida Gremial",
+      "segmento": "Gran Encuentro Nacional",
+      "descripcion": "Estamos diseñando los espacios de diálogo regional para que la voz de los microempresarios de las 5 zonas del país sea una sola. ¡Espéralo!",
+      "imagen": "/img/blog-encuentro.jpg",
+      "imagenAlt": "Encuentro nacional de microempresarios de las 5 zonas de Colombia",
+      "fecha": "16 de septiembre de 2026",
+      "fechaISO": "2026-09-16",
+      "tiempoLectura": "4 min",
+      "contenido": [
+        {
+          "tipo": "parrafo",
+          "texto": "Las microempresas somos el 99.6% de las empresas de Colombia, pero cuando se discuten las reglas que nos afectan, casi nunca hay alguien de un negocio de barrio sentado en la mesa. El Gran Encuentro del 99.6% nace para corregir exactamente eso."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Qué es"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Un espacio nacional de diálogo donde los microempresarios de las 5 zonas del país —Caribe, Oriental, Central, Pacífica y Amazonía-Orinoquía— construyen una sola agenda con sus necesidades reales: crédito, formalización, compras públicas y protección frente a las cadenas de intermediación."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Cómo se está construyendo"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "No es un evento diseñado en una oficina de Bogotá. Estamos recogiendo propuestas en espacios regionales previos para que lo que se lleve al encuentro sea lo que el territorio pidió, no lo que alguien supone que necesita. Cada zona tendrá sus voceros y su documento de propuestas."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Por qué importa tu presencia"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Una queja individual se pierde; una agenda firmada por miles de microempresarios de las cinco zonas no se puede ignorar. Este encuentro es el paso de la queja a la propuesta, y de la propuesta a la negociación."
+        },
+        {
+          "tipo": "consejo",
+          "texto": "Consejo CONAMIC: los cupos regionales serán limitados y prioritarios para afiliados. Cuando abras inscripciones te avisaremos por todos nuestros canales."
+        }
+      ]
+    },
+    {
+      "titulo": "Convocatorias de fomento y crédito: cómo prepararte para no dejarlas pasar",
+      "slug": "convocatorias-fomento-como-prepararte",
+      "categoria": "Guías Prácticas",
+      "segmento": "Rural y Urbano",
+      "descripcion": "Estamos consolidando las mejores oportunidades de fomento y crédito para el sector agropecuario y comercial. Prepárate desde ya con esta guía práctica.",
+      "imagen": "/img/blog-convocatorias.jpg",
+      "imagenAlt": "Convocatorias de fomento y crédito para microempresarios: cómo prepararte",
+      "fecha": "9 de septiembre de 2026",
+      "fechaISO": "2026-09-09",
+      "tiempoLectura": "6 min",
+      "contenido": [
+        {
+          "tipo": "parrafo",
+          "texto": "Estamos consolidando las mejores oportunidades de fomento y crédito para el sector agropecuario y comercial, y muy pronto anunciaremos nuestra primera gran convocatoria nacional. Pero una convocatoria solo sirve si estás listo cuando abre: la mayoría de quienes quedan por fuera no les faltó mérito, les faltó preparación."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Lo que toda convocatoria va a pedirte"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Identificación vigente y RUT activo con datos actualizados.",
+            "Descripción clara de tu negocio: qué vendes, a quién, cuánto mueves al mes.",
+            "Registros de ingresos y gastos de los últimos meses (sí, esas libretas que te pedimos llevar).",
+            "Un propósito concreto para el dinero: equipo, materia prima, transporte, local."
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Los errores que más descualifican"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Datos incompletos, proponer montos sin justificar y dejar la postulación para el último día son las tres causas del 80% de los rechazos. Ninguna tiene que ver con tu capacidad como empresario; todas tienen solución con anticipación."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Prepárate desde hoy"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Reúne los documentos de la lista en una carpeta física o digital. Escribe en dos líneas para qué usarías un crédito y cuánto necesitas exactamente. Cuando abramos la primera gran convocatoria nacional, los afiliados recibirán el llamado primero y con acompañamiento para postularse bien."
+        },
+        {
+          "tipo": "consejo",
+          "texto": "Consejo CONAMIC: afiliarse no es un trámite, es estar en la lista de los que se enteran primero y tienen ayuda para completar los formularios."
+        }
+      ]
+    },
+    {
+      "titulo": "Ley de Financiamiento: qué significa para tu micronegocio",
+      "slug": "ley-financiamiento-que-significa-para-tu-negocio",
+      "categoria": "Análisis Normativo",
+      "segmento": "Economía Popular",
+      "descripcion": "Analizamos las nuevas medidas del Gobierno para asegurar que los beneficios lleguen realmente al micronegocio de barrio y no se queden en la burocracia.",
+      "imagen": "/img/blog-financiamiento.jpg",
+      "imagenAlt": "Infografía sobre la Ley de Financiamiento y su impacto en el microempresario de barrio",
+      "fecha": "2 de septiembre de 2026",
+      "fechaISO": "2026-09-02",
+      "tiempoLectura": "7 min",
+      "contenido": [
+        {
+          "tipo": "parrafo",
+          "texto": "Cada ley de financiamiento define cómo se recolectan los recursos del país y, lo más importante para nosotros, a quién le destinan ayudas, créditos blandos y beneficios. El problema nunca es la letra pequeña por falta de importancia: es que casi nadie la traduce al lenguaje de un negocio de barrio. Eso es exactamente lo que hacemos desde la veeduría gremial."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Qué estamos vigilando"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Que las líneas de crédito lleguen con requisitos que un micronegocio pueda cumplir, no solo empresas grandes.",
+            "Que los trámites sean digitales o cercanos, sin peregrinaciones que cuestan un día de ventas.",
+            "Que los beneficios anunciados tengan presupuesto y reglamento claro antes de salir en los titulares.",
+            "Que la economía popular —tenderos, costureras, artesanos, transportadores— aparezca nombrada explícitamente."
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Cómo te afecta en la práctica"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Si la ley se implementa bien, significa crédito accesible para rotar inventario, tasas justas y programas de formalización con acompañamiento real. Si se queda en burocracia, significa titulares bonitos y bolsillos iguales. La diferencia entre ambos escenarios está en la presión que hagamos como sector organizado."
+        },
+        {
+          "tipo": "consejo",
+          "texto": "Consejo CONAMIC: mientras tanto, ten tus registros al día. Las convocatorias seriales siempre piden historial básico: quien no documenta queda por fuera aunque cumpla los demás requisitos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Seguiremos reportando cada avance de esta ley aquí y en nuestros canales de afiliados. Esta es la función por la que existe una confederación: que ningún microempresario tenga que entender solo las reglas del país."
+        }
+      ]
+    },
+    {
+      "titulo": "Lo que el microempresario debe saber sobre la nueva reforma: Protege tu bolsillo",
+      "categoria": "Análisis Normativo",
+      "segmento": "Defensa gremial",
+      "descripcion": "Analizamos los cambios normativos recientes y cómo pueden impactar tu negocio. Conoce cómo protegerte.",
+      "imagen": "/img/blog-reforma.jpg",
+      "imagenAlt": "Infografía sobre lo que el microempresario debe saber de la nueva reforma tributaria",
+      "fecha": "28 de agosto de 2026",
+      "slug": "reforma-tributaria-protege-tu-bolsillo",
+      "tiempoLectura": "8 min",
+      "contenido": [
+        {
+          "tipo": "parrafo",
+          "texto": "Cada vez que se habla de reforma tributaria en Colombia, los microempresarios escuchan titulares alarmistas de un lado y promesas tranquilizadoras del otro, y al final nadie explica qué significa para un negocio de barrio. Aquí va una explicación honesta y práctica, sin tecnicismos."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "¿Qué es una reforma tributaria?"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Es el cambio de las reglas del juego en materia de impuestos: quiénes pagan, cuánto, sobre qué productos y con qué beneficios. No es un impuesto nuevo que cae de un día para otro: son modificaciones a las leyes que ya existían. Por eso lo importante no es el titular, sino entender qué reglas cambian y cuáles te tocan."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Por qué te afecta aunque tu negocio sea pequeño"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Aun si tu negocio no es contribuyente directo, la reforma te alcanza por varios caminos: los insumos y mercancías pueden encarecerse si les suben impuestos; los productos de la canasta familiar pueden cambiar de precio según cómo queden gravados; y si estás formalizando, las condiciones de tu régimen pueden ajustarse."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Cinco claves para protegerte"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Mantén tu RUT y tus datos actualizados ante la DIAN: las notificaciones y beneficios llegan a lo que está registrado, no a lo que uno supone.",
+            "Factura siempre, incluso a quien no la pide. Facturar ordena tu negocio y te protege ante cualquier cambio normativo.",
+            "Conoce tu régimen actual. Los regímenes simplificados y especiales existen precisamente para que los negocios pequeños no paguen como las grandes empresas.",
+            "Presta atención al IVA de lo que compras: saber qué productos lo traen y cuáles no te permite explicar subidas de costos y defender tu margen.",
+            "Desconfía de quien prometa \"beneficios garantizados\" de la reforma a cambio de pagos por adelantado. En época de reformas abundan los tramitadores."
+          ]
+        },
+        {
+          "tipo": "consejo",
+          "texto": "Consejo CONAMIC: no tomes decisiones por rumores de WhatsApp. Espera el texto oficial de la ley y sus reglamentos antes de cambiar precios o estructuras."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Qué está haciendo CONAMIC"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Desde nuestra función gremial estamos siguiendo de cerca el trámite legislativo y sus efectos sobre la economía popular: vigilancia de los debates, análisis en lenguaje claro y orientación directa a nuestros afiliados. Cuando haya cambios concretos que te afecten, los vas a conocer aquí primero, explicados para negocio de barrio, no para contadores."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El mejor escudo frente a cualquier reforma sigue siendo el mismo de siempre: registros ordenados, facturación limpia y asociación con quienes defienden tus intereses."
+        }
+      ],
+      "fechaISO": "2026-08-28"
+    },
+    {
+      "titulo": "5 pasos para que tu producto del campo llegue a la ciudad sin intermediarios",
+      "categoria": "Guías Prácticas",
+      "segmento": "Rural",
+      "descripcion": "Estrategias prácticas para conectar directamente productores rurales con mercados urbanos y aumentar tus ganancias.",
+      "imagen": "/img/blog-campo.jpg",
+      "imagenAlt": "Infografía con los cinco pasos para llevar el producto del campo a la ciudad sin intermediarios",
+      "fecha": "20 de agosto de 2026",
+      "slug": "del-campo-a-la-ciudad-sin-intermediarios",
+      "tiempoLectura": "7 min",
+      "contenido": [
+        {
+          "tipo": "parrafo",
+          "texto": "El productor cultiva, el intermediario recoge, revende y revende otra vez, y en la ciudad el precio final puede ser tres veces lo que le pagaron al campesino. Ese margen perdido se puede recuperar. No es fácil, pero sí es posible con estrategia y trabajo conjunto. Aquí van cinco pasos concretos."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Paso 1: Conoce tu costo real por unidad"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Antes de hablar de precios debes saber cuánto te cuesta producir una libra, un bulto o una caja: semilla, abono, transporte, tu tiempo. Sin este número aceptarás cualquier precio porque no sabes cuál te deja ganancia. Con él, negocias con confianza o dices no cuando toca decir no."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Paso 2: Asóciate con otros productores"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Un comprador urbano necesita volumen constante: cincuenta cajas cada semana, no diez hoy y veinte el mes entrante. Solo no puedes cumplir ese compromiso; asociados sí. Además, compartiendo transporte y logística el flete por productor baja drásticamente."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Paso 3: Identifica quién compra directo"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "El canal directo existe y es más amplio de lo que crees:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Mercados campesinos y agrupaciones que organizan ventas directas en barrios.",
+            "Tiendas de barrio y fruteras de barrio que prefieren producto fresco a buen precio.",
+            "Restaurantes y plazas de mercado que buscan proveedores estables.",
+            "Plataformas digitales de campo a ciudad que conectan oferta y demanda."
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Paso 4: Cuida presentación y constancia"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "En la ciudad se compra primero con los ojos: selección del producto, empaque digno y entrega puntual. Un cliente que recibe buena calidad tres semanas seguidas se convierte en cliente fijo; uno que recibe producto golpeado no vuelve. La constancia vale tanto como la calidad."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "Paso 5: Formalízate para venderle grande"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Los compradores institucionales (supermercados, programas públicos, hoteles) necesitan factura y registro legal de su proveedor. La formalización no es un trámite para quedar bien: es la llave a los clientes que pagan mejor y a tiempo."
+        },
+        {
+          "tipo": "consejo",
+          "texto": "Consejo CONAMIC: empieza con un solo producto donde seas fuerte y un solo cliente directo. Perfecciona esa ruta y luego replica el modelo con más productos."
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Saltarse al intermediario no significa eliminarlo de un día para otro, sino construir una relación directa tan sólida que el margen quede en quien produce. La unión hace la diferencia entre intentarlo y lograrlo."
+        }
+      ],
+      "fechaISO": "2026-08-20"
+    },
+    {
+      "titulo": "Cómo organizar tus cuentas sin ser contador",
+      "categoria": "Guías Prácticas",
+      "segmento": "Micronegocio informal",
+      "descripcion": "Aprende a llevar las cuentas de tu negocio de manera sencilla y efectiva sin necesidad de conocimientos avanzados.",
+      "imagen": "/img/blog-cuentas.jpg",
+      "imagenAlt": "Cuaderno de registro diario de ingresos y gastos de un microempresario",
+      "fecha": "12 de agosto de 2026",
+      "slug": "organizar-cuentas-sin-ser-contador",
+      "tiempoLectura": "6 min",
+      "contenido": [
+        {
+          "tipo": "parrafo",
+          "texto": "Si tienes un negocio pequeño, seguramente llevas las cuentas \"de cabeza\": sabes más o menos cuánto vendiste y cuánto gastaste, pero cuando cierras el mes nunca sabes bien si ganaste o perdiste. La buena noticia es que no necesitas ser contador para poner orden. Necesitas un sistema simple y constancia."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "1. Separa tu plata de la plata del negocio"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Este es el error más común y el más costoso. Si sacas dinero de la caja para el mercado de la casa sin registrarlo, tu negocio parece que no funciona, cuando en realidad te estás \"prestando\" a ti mismo. Abre una cuenta de ahorros solo para el negocio y define un salario semanal para ti. Todo lo que salga de ahí sí se registra como gasto."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "2. Anota todo, todos los días"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "No sirve de nada anular cuentas el domingo si no anotaste nada durante la semana. Usa lo que tengas a mano: una libreta, el celular o una hoja de cálculo. Lo importante es el hábito: cada venta y cada gasto quedan escritos el mismo día, con fecha."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "3. Clasifica tus gastos en cuatro grupos"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Para no perderte entre recibos, organiza todo en estas categorías básicas:"
+        },
+        {
+          "tipo": "lista",
+          "items": [
+            "Insumos o mercancía: lo que compras para producir o revender.",
+            "Operación: arriendo, servicios, transporte, empaque.",
+            "Personas: salarios, ayudantes, tu propio salario.",
+            "Obligaciones: impuestos, cuotas, seguros."
+          ]
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "4. Calcula cuánto te queda realmente"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Al final del mes haz esta cuenta simple: ventas totales, menos costo de la mercancía vendida, menos gastos de operación. Eso es tu utilidad bruta. De ahí resta obligaciones y tu salario. Si ese número sale negativo dos meses seguidos, algo hay que ajustar: precios, gastos o volumen."
+        },
+        {
+          "tipo": "consejo",
+          "texto": "Consejo CONAMIC: revisa tus números el mismo día cada semana, por ejemplo los lunes en la mañana. Una hora fija vale más que muchas horas perdidas."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "5. Guarda tus soportes"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Facturas, recibos y comprobantes van a una carpeta (física o digital con fotos). Cuando llegue la temporada de impuestos o quieras solicitar un crédito, esa carpeta vale oro: sin soportes no puedes demostrar nada."
+        },
+        {
+          "tipo": "subtitulo",
+          "texto": "¿Y cuándo sí necesito un contador?"
+        },
+        {
+          "tipo": "parrafo",
+          "texto": "Cuando el negocio crece, cuando vas a formalizarte, cuando pides un crédito grande o cuando contratas personas. El contador no organiza tu día a día: interpreta los registros que tú ya llevas ordenados. Un negocio con registros limpios paga menos horas de contador y toma mejores decisiones."
+        }
+      ],
+      "fechaISO": "2026-08-12"
+    }
+  ]
+}

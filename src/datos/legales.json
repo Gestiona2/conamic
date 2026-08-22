@@ -1,0 +1,71 @@
+{
+  "_comentario": "Páginas legales. Política de privacidad y tratamiento de datos según Ley 1581 de 2012 (Colombia). Texto base editable por el cliente con su asesor legal.",
+
+  "politicaPrivacidad": {
+    "meta": {
+      "titulo": "Política de Privacidad — CONAMIC",
+      "descripcion": "Cómo la Confederación Nacional de Empresarios de la Microempresa recolecta, usa y protege tus datos personales."
+    },
+    "titulo": "Política de Privacidad",
+    "intro": "La Confederación Nacional de Empresarios de la Microempresa (CONAMIC), con NIT 860.535.086-1, en cumplimiento de la Ley 1581 de 2012 y el Decreto 1377 de 2013, informa cómo trata los datos personales que recolecta a través de este sitio web.",
+    "secciones": [
+      {
+        "titulo": "1. Responsable del tratamiento",
+        "texto": "CONAMIC, con sede en Carrera 24 # 86 A 20, Bogotá D.C., teléfono +57 (313) 418 4390, correo gerencia@conamic.org."
+      },
+      {
+        "titulo": "2. Datos que recolectamos",
+        "texto": "Nombre completo, nombre del negocio, sector económico, municipio, teléfono o WhatsApp, correo electrónico y la información que nos compartas voluntariamente sobre tu emprendimiento a través de los formularios de afiliación y contacto."
+      },
+      {
+        "titulo": "3. Finalidad del tratamiento",
+        "texto": "Gestionar tu solicitud de afiliación o contacto, prestar los servicios gremiales (asesoría jurídica, capacitación, financiación, convenios), enviarte información sobre actividades, convocatorias y beneficios de la Confederación, y cumplir obligaciones legales."
+      },
+      {
+        "titulo": "4. Tus derechos",
+        "texto": "Conocer, actualizar y rectificar tus datos; solicitar prueba de la autorización otorgada; ser informado del uso que se les ha dado; revocar la autorización y solicitar la supresión de tus datos cuando no exista deber legal de conservarlos; y acceder gratuitamente a tus datos, conforme al artículo 8 de la Ley 1581 de 2012."
+      },
+      {
+        "titulo": "5. Cómo ejercer tus derechos",
+        "texto": "Escríbenos a gerencia@conamic.org con el asunto 'Protección de datos', indicando tu nombre y la solicitud concreta. Responderemos dentro de los términos legales vigentes (diez días hábiles para consultas, quince para reclamos)."
+      },
+      {
+        "titulo": "6. Seguridad",
+        "texto": "Aplicamos medidas técnicas y organizativas razonables para proteger tus datos contra pérdida, uso indebido o acceso no autorizado. El sitio no comparte tus datos con terceros sin tu autorización, salvo obligación legal."
+      }
+    ],
+    "actualizacion": "Última actualización: agosto de 2026."
+  },
+
+  "tratamientoDatos": {
+    "meta": {
+      "titulo": "Tratamiento de Datos Personales — CONAMIC",
+      "descripcion": "Autorización y tratamiento de datos personales conforme a la Ley 1581 de 2012 (régimen de Habeas Data)."
+    },
+    "titulo": "Autorización de Tratamiento de Datos Personales",
+    "intro": "Al diligenciar los formularios de este sitio, autorizas de manera libre, expresa e informada a CONAMIC para tratar tus datos personales conforme a esta política, en los términos de la Ley Estatutaria 1581 de 2012.",
+    "secciones": [
+      {
+        "titulo": "1. Naturaleza de la autorización",
+        "texto": "La autorización es previa, expresa e informada. Constituye una prueba de la misma el acuse de recibo del presente aviso de privacidad mediante la marcación de la casilla de aceptación en cada formulario."
+      },
+      {
+        "titulo": "2. Tratamiento de datos de menores de edad",
+        "texto": "Este sitio está dirigido exclusivamente a microempresarios mayores de edad. No recolectamos deliberadamente datos de menores de edad."
+      },
+      {
+        "titulo": "3. Datos sensibles",
+        "texto": "CONAMIC no solicita datos sensibles (origen racial o étnico, preferencias políticas, convicciones religiosas, salud, entre otros). Te pedimos no compartirlos en nuestros formularios."
+      },
+      {
+        "titulo": "4. Conservación y eliminación",
+        "texto": "Conservamos tus datos mientras mantengas tu vínculo gremial o hasta que solicites su supresión. Los datos requeridos por obligaciones legales se conservarán durante los plazos exigidos por la ley."
+      },
+      {
+        "titulo": "5. Contacto del responsable",
+        "texto": "Carrera 24 # 86 A 20, Bogotá D.C. · +57 (313) 418 4390 · gerencia@conamic.org"
+      }
+    ],
+    "actualizacion": "Última actualización: agosto de 2026."
+  }
+}

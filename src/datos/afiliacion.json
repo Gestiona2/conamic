@@ -1,0 +1,88 @@
+{
+  "_comentario": "Página de conversión: Afiliación. Fuente: insumos/negocio/01-evolucion-contenido-web.txt (sección 6)",
+
+  "meta": {
+    "titulo": "Afíliate — CONAMIC",
+    "descripcion": "Deja de ser invisible para empezar a ser invencible. Activa tu blindaje empresarial y tu llave de crecimiento en tres pasos."
+  },
+
+  "hero": {
+    "titulo": "Dejar de ser invisible para empezar a ser invencible.",
+    "texto": "Sabemos que estás cansado de que te llamen 'micro', 'pequeño' o 'informal'. Para nosotros, eres el dueño de tu destino y el motor de tu familia. Afiliarte a CONAMIC no es llenar un formulario más; es activar un escudo de protección y una llave de crecimiento para que tu negocio nunca más vuelva a estar solo."
+  },
+
+  "pasos": {
+    "titulo": "Tres pasos para que tu voz empiece a contar.",
+    "items": [
+      {
+        "titulo": "Cuéntanos quién eres",
+        "subtitulo": "El Formulario",
+        "texto": "No necesitamos un expediente complejo. Solo tus datos básicos y saber qué hace tu negocio. Ya sea que estés en la ciudad o en el campo, queremos saber de ti."
+      },
+      {
+        "titulo": "Respaldo de tu actividad",
+        "subtitulo": "Documentos",
+        "texto": "No te detengas si te falta algún papel. Si tienes Cámara de Comercio, adjúntala. Si eres un micronegocio independiente o rural, tu Cédula y tu RUT (si lo tienes) son suficientes para empezar. Nosotros te asesoramos en lo que te falte."
+      },
+      {
+        "titulo": "Activa tu respaldo",
+        "subtitulo": "Membresía y Bienvenida",
+        "texto": "Nuestros aportes son justos y proporcionales, porque entendemos el tamaño de tu esfuerzo. Una vez te registres, un asesor gremial se comunicará contigo para darte la bienvenida, asignarte la categoría ideal para tu negocio y explicarte cómo activar todos tus beneficios."
+      }
+    ]
+  },
+
+  "formulario": {
+    "titulo": "El Registro de tu Realidad",
+    "texto": "No te pedimos una hoja de vida corporativa. Cuéntanos qué haces, dónde estás y qué necesitas.",
+    "campos": {
+      "nombre": "Nombre completo",
+      "negocio": "¿Cómo se llama tu negocio o emprendimiento?",
+      "sector": "¿En qué sector trabajas?",
+      "sectorOpciones": [
+        "Comercio / tienda de barrio",
+        "Campo / producción agropecuaria",
+        "Taller / manufactura",
+        "Servicios profesionales",
+        "Transporte",
+        "Economía popular / independiente",
+        "Asociación, federación o cooperativa",
+        "Otro"
+      ],
+      "municipio": "¿En qué municipio o ciudad estás?",
+      "telefono": "Teléfono / WhatsApp",
+      "correo": "Correo electrónico (opcional)",
+      "reto": "¿Cuál es tu mayor reto hoy?",
+      "aceptaTratamiento": "Autorizo el tratamiento de mis datos personales según la política de CONAMIC."
+    },
+    "boton": "¡Quiero ser parte de CONAMIC!"
+  },
+
+  "cierre": {
+    "texto": "Aquí no eres un número de registro, eres el protagonista de la economía colombiana.",
+    "destacado": "¡Bienvenido a tu casa!"
+  },
+
+  "faq": {
+    "encabezado": "Preguntas",
+    "titulo": "Todo lo que necesitas saber para unirte.",
+    "items": [
+      {
+        "pregunta": "¿Cuáles son los requisitos para unirme?",
+        "respuesta": "En CONAMIC cabemos todos. Solo necesitas ser un microempresario activo, ya sea en el campo o en la ciudad. No importa si eres una asociación constituida, una federación o un micronegocio independiente. Si produces y generas sustento, eres bienvenido. Nosotros te guiaremos en tu camino hacia el fortalecimiento empresarial."
+      },
+      {
+        "pregunta": "¿Cuánto cuesta la afiliación?",
+        "respuesta": "Tu inversión en el gremio es proporcional al tamaño de tu negocio. Tenemos planes diseñados para que desde el productor más pequeño hasta la asociación más grande puedan acceder al respaldo gremial sin afectar su caja. Un asesor te explicará la categoría que mejor se adapta a tu realidad actual."
+      },
+      {
+        "pregunta": "¿Cuánto tarda el proceso de ingreso?",
+        "respuesta": "Nuestra meta es que empieces a disfrutar de tus beneficios en tiempo récord. Una vez recibamos tu información, un asesor se contactará contigo en menos de 48 horas para validar tus datos y darte la bienvenida oficial a la Confederación."
+      },
+      {
+        "pregunta": "¿Puedo afiliarme si soy persona natural o aún no tengo Cámara de Comercio?",
+        "respuesta": "¡Claro que sí! Gran parte de la fuerza productiva de Colombia nace desde la persona natural y la economía popular. En CONAMIC te recibimos y te brindamos el respaldo jurídico y técnico que necesitas para que tu negocio crezca con seguridad hasta que decidas dar el paso a la formalización total."
+      }
+    ]
+  }
+}

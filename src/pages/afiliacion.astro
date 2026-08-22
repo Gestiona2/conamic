@@ -1,0 +1,174 @@
+---
+/**
+ * Página de conversión: Afiliación. Contenido desde src/datos/afiliacion.json.
+ *
+ * El formulario NO envía nada por sí solo: se conecta con el módulo
+ * features/forms-whatsapp/ o un endpoint serverless cuando se configure.
+ * Mientras tanto, el botón abre WhatsApp con los datos del visitante.
+ */
+import Layout from "../layouts/Layout.astro";
+import sitio from "../datos/sitio.json";
+import datos from "../datos/afiliacion.json";
+
+const { meta, hero, pasos, formulario, cierre, faq } = datos;
+---
+
+<Layout titulo={meta.titulo} descripcion={meta.descripcion} activa="afiliacion">
+  {/* ==================== HERO ==================== */}
+  <header class="portada" style="padding-bottom:80px;">
+    <div class="container">
+      <span class="eyebrow reveal"><span class="dot"></span> Afíliate</span>
+      <h1 class="reveal" style="font-size:clamp(2.2rem,5vw,3.6rem); max-width:900px;">{hero.titulo}</h1>
+      <p class="lead reveal" style="max-width:800px; margin-top:20px;">{hero.texto}</p>
+    </div>
+  </header>
+
+  {/* ==================== PASOS ==================== */}
+  <section class="pad" style="padding-top:60px;">
+    <div class="container">
+      <h2 class="section-title reveal">{pasos.titulo}</h2>
+      <div class="pasos" data-stagger>
+        {pasos.items.map((p) => (
+          <article class="card paso reveal-up">
+            <div class="paso-num"></div>
+            <div>
+              <p style="font-size:.78rem; font-weight:600; letter-spacing:.12em; text-transform:uppercase; color:var(--crecimiento); margin-bottom:6px;">{p.subtitulo}</p>
+              <h3>{p.titulo}</h3>
+              <p>{p.texto}</p>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== FORMULARIO — franja azul institucional ==================== */}
+  <section class="pad franja-azul" id="registro">
+    <div class="container">
+      <div class="contacto-grid">
+        <div class="reveal-left">
+          <h2 class="section-title" style="font-size:2rem;">{formulario.titulo}</h2>
+          <p class="lead" style="margin-top:16px;">{formulario.texto}</p>
+
+          <!-- Imagen: apretón de manos real, manos que trabajan (instrucción del cliente) -->
+          <img
+            src="/img/afiliacion-manos.jpg"
+            alt="Manos de microempresarios trabajando juntos"
+            loading="lazy" width="600" height="420"
+            style="border-radius:18px; margin-top:34px; box-shadow:0 24px 60px rgba(0,0,0,.35);"
+          />
+        </div>
+
+        <form id="formularioAfiliacion" class="glass reveal-right" style="padding:38px 34px; display:grid; gap:18px;" novalidate>
+          <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+            <label for="fNombre">{formulario.campos.nombre} *</label>
+            <input type="text" id="fNombre" name="nombre" required autocomplete="name" />
+          </div>
+
+          <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+            <label for="fNegocio">{formulario.campos.negocio}</label>
+            <input type="text" id="fNegocio" name="negocio" autocomplete="organization" />
+          </div>
+
+          <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+            <label for="fSector">{formulario.campos.sector} *</label>
+            <select id="fSector" name="sector" required>
+              <option value="" disabled selected>Selecciona tu sector</option>
+              {formulario.campos.sectorOpciones.map((o) => <option value={o}>{o}</option>)}
+            </select>
+          </div>
+
+          <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+            <label for="fMunicipio">{formulario.campos.municipio} *</label>
+            <input type="text" id="fMunicipio" name="municipio" required />
+          </div>
+
+          <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+            <label for="fTelefono">{formulario.campos.telefono} *</label>
+            <input type="tel" id="fTelefono" name="telefono" required autocomplete="tel" inputmode="tel" />
+          </div>
+
+          <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+            <label for="fCorreo">{formulario.campos.correo}</label>
+            <input type="email" id="fCorreo" name="correo" autocomplete="email" />
+          </div>
+
+          <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+            <label for="fReto">{formulario.campos.reto}</label>
+            <textarea id="fReto" name="reto" rows="3"></textarea>
+          </div>
+
+          <label class="form-nota" style="display:flex; gap:10px; align-items:flex-start; cursor:pointer;">
+            <input type="checkbox" name="aceptaTratamiento" required style="width:auto; margin-top:3px;" />
+            <span>{formulario.campos.aceptaTratamiento} <a href="/tratamiento-datos" style="color:var(--acento);">Leer política</a></span>
+          </label>
+
+          <button type="submit" class="btn btn-primary" style="font-size:1.02rem;">{formulario.boton}</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== CIERRE ==================== */}
+  <section class="pad">
+    <div class="container" style="text-align:center; max-width:720px;">
+      <p class="reveal" style="font-family:var(--font-display); font-size:clamp(1.3rem,3vw,1.8rem); font-weight:600;">{cierre.texto}</p>
+      <p class="reveal marca-text" style="font-family:var(--font-display); font-size:clamp(1.6rem,4vw,2.4rem); font-weight:700; margin-top:12px;">{cierre.destacado}</p>
+    </div>
+  </section>
+
+  {/* ==================== FAQ ==================== */}
+  <section class="pad" style="background:var(--bg-soft)">
+    <div class="container">
+      <span class="eyebrow reveal"><span class="dot"></span> {faq.encabezado}</span>
+      <h2 class="section-title reveal">{faq.titulo}</h2>
+
+      <div class="lista-faq" data-stagger>
+        {faq.items.map((f) => (
+          <details class="card reveal-up">
+            <summary>{f.pregunta}</summary>
+            <p>{f.respuesta}</p>
+          </details>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script define:vars={{ WHATSAPP: sitio.whatsapp }}>
+  /*
+   * Envío provisional por WhatsApp mientras se conecta el módulo
+   * forms-whatsapp o el endpoint serverless definitivo.
+   * Los datos del formulario viajan como mensaje prellenado.
+   */
+  (function () {
+    const form = document.getElementById("formularioAfiliacion");
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const fd = new FormData(form);
+      const lineas = [
+        "¡Hola CONAMIC! Quiero ser parte de la Confederación.",
+        "",
+        `*Nombre:* ${fd.get("nombre") || ""}`,
+        `*Negocio:* ${fd.get("negocio") || "—"}`,
+        `*Sector:* ${fd.get("sector") || ""}`,
+        `*Municipio:* ${fd.get("municipio") || ""}`,
+        `*Teléfono:* ${fd.get("telefono") || ""}`,
+        `*Correo:* ${fd.get("correo") || "—"}`,
+        `*Mi mayor reto hoy:* ${fd.get("reto") || "—"}`
+      ];
+
+      const url =
+        "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(lineas.join("\n"));
+      window.open(url, "_blank", "noopener");
+    });
+  })();
+</script>

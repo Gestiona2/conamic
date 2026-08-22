@@ -1,0 +1,98 @@
+{
+  "_comentario": "Contenido de Quiénes Somos. Fuente: insumos/negocio/01-evolucion-contenido-web.txt",
+
+  "meta": {
+    "titulo": "Quiénes Somos — CONAMIC",
+    "descripcion": "La fuerza que nace desde la base. Conoce la historia, misión, visión y el equipo directivo de la Confederación Nacional de Empresarios de la Microempresa."
+  },
+
+  "hero": {
+    "encabezado": "Quiénes Somos",
+    "titulo": "La fuerza que nace desde la base.",
+    "texto1": "CONAMIC no nació en un escritorio, nació en las calles, en las parcelas y en los mostradores de los micronegocios de toda Colombia.",
+    "texto2": "Somos la respuesta a una realidad histórica: mientras el 99.6% de las empresas sostenemos al país, nuestras necesidades han sido ignoradas por décadas. Existimos para que el microempresario deje de ser un sobreviviente solitario y se convierta en un actor de poder.",
+    "imagen": "/img/intro-conamic.jpg",
+    "imagenAlt": "Costurera microempresaria trabajando en su taller"
+  },
+
+  "misionVision": {
+    "misionTitulo": "Nuestro Propósito (Misión)",
+    "misionTexto": "Unir el tejido disperso de la microempresa urbana y rural. Trabajamos para transformar la economía popular en una estructura sólida, competitiva y protegida, asegurando que cada microempresario tenga las herramientas, el crédito y la voz política que se merece.",
+    "visionTitulo": "Nuestra Apuesta (Visión)",
+    "visionTexto": "Proyectamos un país donde el microempresario sea el eje central del desarrollo. Queremos una Colombia con un campo tecnificado y una ciudad emprendedora, donde la formalidad sea un camino de éxito y no una carga, y donde CONAMIC sea el respaldo innegociable de cada persona que decide crear empresa."
+  },
+
+  "valores": {
+    "titulo": "Lo que nos define — Valores en acción",
+    "items": [
+      {
+        "icono": "map-pin",
+        "nombre": "Identidad Territorial",
+        "texto": "Sentimos orgullo por nuestra raíz rural y nuestra fuerza urbana. Estamos donde otros no llegan."
+      },
+      {
+        "icono": "handshake",
+        "nombre": "Solidaridad Gremial",
+        "texto": "El éxito de uno es la protección de todos. Si un microempresario crece, el tejido se fortalece."
+      },
+      {
+        "icono": "shield-check",
+        "nombre": "Independencia y Coraje",
+        "texto": "No tenemos miedo de decir la verdad ante el Gobierno o la banca. Representamos los intereses de la base, sin filtros."
+      }
+    ]
+  },
+
+  "historia": {
+    "titulo": "40 años caminando junto a los que construyen país.",
+    "parrafos": [
+      "CONAMIC no es un gremio improvisado. Nacimos en 1986, en un momento donde los microempresarios no tenían quién los defendiera. Desde nuestra personería jurídica otorgada por el Ministerio de Justicia y nuestra consolidación en 1997 ante la Cámara de Comercio de Bogotá, hemos mantenido una sola bandera: la dignidad de la base productiva.",
+      "Nuestra historia no son solo papeles o registros; son cuatro décadas recorriendo las veredas, las plazas de mercado y los barrios, entendiendo que el 99.6% de las empresas de este país merecen un lugar en la mesa donde se toman las decisiones. No estamos probando suerte; sabemos cómo proteger tu esfuerzo porque llevamos toda una vida haciéndolo."
+    ],
+    "hitos": [
+      { "anio": "1984", "texto": "El Gobierno Nacional formula el primer Plan Nacional para el Desarrollo de la Microempresa." },
+      { "anio": "1985", "texto": "Primer taller nacional de asociaciones de microempresas, con apoyo de SENA y UNICEF." },
+      { "anio": "1986", "texto": "Fundación oficial de CONAMIC: la primera confederación nacional del sector microempresarial." },
+      { "anio": "1997", "texto": "Consolidación registral ante la Cámara de Comercio de Bogotá." },
+      { "anio": "2010", "texto": "Resolución ministerial reconoce a CONAMIC como representante gremial ante el Consejo Superior de Microempresa." },
+      { "anio": "2026", "texto": "Reforma estatutaria para integrar federaciones, cooperativas y actores de la economía popular." }
+    ]
+  },
+
+  "equipo": {
+    "titulo": "Nuestro Equipo Directivo",
+    "texto": "Un grupo de líderes microempresarios comprometidos con el desarrollo del sector.",
+    "miembros": [
+      { "nombre": "Antonio Francisco Osorio Melo", "cargo": "Presidente Nacional" },
+      { "nombre": "Zoraida Pabón", "cargo": "Vicepresidenta Nacional" },
+      { "nombre": "Luz Marina Miranda", "cargo": "Miembro Junta Directiva" },
+      { "nombre": "Zulma Santamaría", "cargo": "Miembro Junta Directiva" },
+      { "nombre": "María Isbelia Gutiérrez", "cargo": "Miembro Junta Directiva" },
+      { "nombre": "Enrique Ramírez", "cargo": "Miembro Junta Directiva" },
+      { "nombre": "Edison Díaz", "cargo": "Miembro Junta Directiva" }
+    ],
+    "notaFoto": "Pendiente: fotos oficiales de los directivos — usar placeholder hasta tenerlas"
+  },
+
+  "alianzas": {
+    "titulo": "Puentes que abren puertas a tu negocio.",
+    "texto": "En CONAMIC sabemos que el 99.6% unido tiene poder, pero conectado tiene futuro. No trabajamos solos. Hemos construido una red de aliados estratégicos con el único fin de que los recursos, las leyes y los proyectos dejen de quedarse en el papel y lleguen finalmente a tu parcela, a tu tienda o a tu taller.",
+    "items": [
+      {
+        "icono": "landmark",
+        "titulo": "Gobierno Nacional y Territorios",
+        "texto": "Gestionamos con Gobierno nacional, Ministerios y Alcaldías para que las políticas de economía popular y desarrollo rural se diseñen pensando en tu realidad, no desde un escritorio."
+      },
+      {
+        "icono": "building-2",
+        "titulo": "Cámaras de Comercio y Redes Empresariales",
+        "texto": "Articulamos espacios de formalización amigable y ruedas de negocios para que el microempresario sea visto como un proveedor de talla mundial."
+      },
+      {
+        "icono": "globe",
+        "titulo": "Cooperación Internacional y Entidades Multilaterales",
+        "texto": "Traemos conocimiento y recursos de organismos internacionales para fortalecer la soberanía alimentaria y la innovación tecnológica de nuestra base gremial."
+      }
+    ]
+  }
+}

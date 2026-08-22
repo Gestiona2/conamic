@@ -1,0 +1,226 @@
+@import "tailwindcss";
+
+/* ============================================================
+   TIPOGRAFÍAS AUTO-HOSPEDADAS
+   Se guardan en /public/fonts, NO se cargan desde Google.
+   Razón doble: privacidad (Google no recibe la IP del visitante)
+   y longevidad (el sitio no depende de un servidor ajeno).
+   Preferir fuentes VARIABLES: un solo archivo cubre todos los pesos.
+   Descargar solo el subset "latin" (U+0000-00FF) — cubre español.
+   ============================================================ */
+@font-face {
+  font-family: "FUENTE-TITULOS";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("/fonts/titulos-variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "FUENTE-CUERPO";
+  font-style: normal;
+  font-weight: 300 700;
+  font-display: swap;
+  src: url("/fonts/cuerpo-variable.woff2") format("woff2");
+}
+
+/* ============================================================
+   TOKENS DE MARCA — llenar desde docs/MARCA.md del proyecto
+   Estos cinco colores salen del manual de marca del cliente.
+   Verificar contraste en tema claro Y oscuro antes de fijarlos.
+   ============================================================ */
+@theme {
+  --font-display: "FUENTE-TITULOS", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "FUENTE-CUERPO", ui-sans-serif, system-ui, sans-serif;
+
+  --color-marca: #0f766e;      /* principal · botones, acentos de texto */
+  --color-acento: #14b8a6;     /* acento claro · subrayados, destacados */
+  --color-oscuro: #0f172a;     /* autoridad · fondos de portada, texto */
+  --color-claro: #f8fafc;      /* fondo general */
+  --color-medio: #334155;      /* texto secundario */
+}
+
+/* ============================================================
+   VARIABLES SEMÁNTICAS — tema claro (por defecto)
+   Las secciones usan estas, nunca los colores de marca directos.
+   Así el tema oscuro se resuelve redefiniendo solo este bloque.
+   ============================================================ */
+:root {
+  --marca: #0f766e;
+  --acento: #14b8a6;
+  --oscuro: #0f172a;
+  --claro: #f8fafc;
+  --medio: #334155;
+
+  --bg: #f8fafc;
+  --bg-soft: #eef2f8;
+  --surface: #ffffff;
+  --surface-2: #ffffff;
+  --glass: rgba(255, 255, 255, 0.7);
+  --border: rgba(15, 23, 42, 0.10);
+  --border-strong: rgba(15, 23, 42, 0.16);
+  --text: #0f172a;
+  --text-soft: #334155;
+  --text-muted: #64748b;
+  --shadow: rgba(15, 23, 42, 0.10);
+  --nav-bg: rgba(248, 250, 252, 0.65);
+  --glass-blur: 16px;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0f172a;
+  --bg-soft: #0b1222;
+  --surface: #131d36;
+  --surface-2: rgba(255, 255, 255, 0.04);
+  --glass: rgba(255, 255, 255, 0.05);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text: #f8fafc;
+  --text-soft: #cbd5e1;
+  --text-muted: #94a3b8;
+  --shadow: rgba(2, 6, 20, 0.5);
+  --nav-bg: rgba(15, 23, 42, 0.55);
+}
+
+/* ============================================================
+   BASE
+   ============================================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 92px; overflow-x: hidden; max-width: 100%; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  transition: background .5s ease, color .5s ease;
+}
+h1, h2, h3, h4, .display { font-family: var(--font-display); letter-spacing: -.02em; line-height: 1.08; }
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+::selection { background: var(--marca); color: #fff; }
+
+.container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+section { position: relative; }
+.pad { padding-top: 110px; padding-bottom: 110px; }
+
+/* Accesibilidad: respetar a quien pidió menos movimiento. NO quitar. */
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--acento); outline-offset: 3px; border-radius: 4px;
+}
+
+/* ============================================================
+   TIPOGRAFÍA UTILITARIA
+   ============================================================ */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 8px; font-size: .8rem; font-weight: 700;
+  letter-spacing: .14em; text-transform: uppercase; color: var(--marca); margin-bottom: 18px;
+}
+.eyebrow .dot {
+  width: 8px; height: 8px; border-radius: 50%; background: var(--acento);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--acento) 22%, transparent);
+}
+:root[data-theme="dark"] .eyebrow { color: var(--acento); }
+
+.section-title { font-size: clamp(2rem, 4.6vw, 3.4rem); font-weight: 800; }
+.lead { color: var(--text-soft); font-size: 1.05rem; }
+.marca-text { color: var(--marca); }
+:root[data-theme="dark"] .marca-text { color: var(--acento); }
+
+/* ============================================================
+   SUPERFICIES
+   ============================================================ */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: 0 18px 44px var(--shadow);
+}
+.glass {
+  background: var(--glass);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(var(--glass-blur)); -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-radius: 20px;
+  box-shadow: 0 18px 44px var(--shadow);
+}
+
+/* ============================================================
+   BOTONES
+   ============================================================ */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-display);
+  font-weight: 600; font-size: .96rem; padding: 14px 26px; border-radius: 12px;
+  cursor: pointer; border: none; position: relative; overflow: hidden;
+  transition: transform .25s ease, box-shadow .3s ease, background .3s ease;
+}
+/* Brillo que cruza el botón al pasar el mouse */
+.btn::before {
+  content: ''; position: absolute; top: 0; left: -100%; width: 60%; height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255,255,255,.22), transparent);
+  transition: left .6s ease;
+}
+.btn:hover::before { left: 130%; }
+
+.btn-primary {
+  color: #fff; background: var(--marca);
+  box-shadow: 0 10px 26px color-mix(in srgb, var(--marca) 35%, transparent);
+}
+.btn-primary:hover {
+  transform: translateY(-3px);
+  background: color-mix(in srgb, var(--marca) 88%, #000);
+  box-shadow: 0 16px 38px color-mix(in srgb, var(--marca) 45%, transparent);
+}
+.btn-accent {
+  color: var(--oscuro); background: var(--acento);
+  box-shadow: 0 10px 26px color-mix(in srgb, var(--acento) 35%, transparent);
+}
+.btn-accent:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 38px color-mix(in srgb, var(--acento) 45%, transparent);
+}
+.btn-ghost { color: var(--text); background: transparent; border: 1px solid var(--border-strong); }
+.btn-ghost:hover { transform: translateY(-3px); border-color: var(--marca); color: var(--marca); }
+.btn-light { color: var(--oscuro); background: #fff; }
+.btn-light:hover { transform: translateY(-3px); box-shadow: 0 16px 38px rgba(0,0,0,.2); }
+
+/* ============================================================
+   APARICIONES AL BAJAR (ver conocimiento/animaciones.md)
+   .reveal        → lo maneja GSAP desde Layout.astro
+   .reveal-up etc → CSS puro, se activan con .seen
+   ============================================================ */
+.reveal { opacity: 0; transform: translateY(38px); }
+
+.reveal-up, .reveal-left, .reveal-right, .reveal-pop {
+  opacity: 0;
+  transition: opacity .7s ease, transform .7s cubic-bezier(.2, .7, .2, 1);
+  transition-delay: calc(var(--i, 0) * 90ms);
+}
+.reveal-up    { transform: translateY(32px); }
+.reveal-left  { transform: translateX(-32px); }
+.reveal-right { transform: translateX(32px); }
+.reveal-pop   { transform: scale(.94); }
+.reveal-up.seen, .reveal-left.seen, .reveal-right.seen, .reveal-pop.seen {
+  opacity: 1; transform: none;
+}
+
+/* ============================================================
+   RESPONSIVE — puntos de corte del sistema
+   Probar SIEMPRE en 320px y 375px reales, no solo en el editor.
+   ============================================================ */
+@media (max-width: 1024px) { .pad { padding-top: 84px; padding-bottom: 84px; } }
+@media (max-width: 640px)  { .pad { padding-top: 64px; padding-bottom: 64px; } .container { padding: 0 18px; } }
+
+/* ============================================================
+   ESTILOS DEL SITIO
+   A partir de aquí van los estilos propios de cada sección.
+   Todo lo de arriba es la base compartida: no reescribirla,
+   solo agregar. Y usar SIEMPRE las variables semánticas
+   (var(--text), var(--bg)…), nunca colores escritos a mano,
+   o el tema oscuro se rompe.
+   ============================================================ */

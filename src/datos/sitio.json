@@ -1,0 +1,81 @@
+{
+  "_comentario": "Datos que se repiten en todas las páginas: menú, pie, contacto. El contenido de cada página va en su propio archivo (inicio.json, quienes-somos.json...).",
+  "nombre": "CONAMIC",
+  "razonSocial": "Confederación Nacional de Empresarios de la Microempresa",
+  "nit": "860.535.086-1",
+  "descripcion": "Gremio que une, representa y potencia a quienes construyen Colombia desde la microempresa y la economía popular. La fuerza que nace desde la base.",
+  "whatsapp": "573134184390",
+  "whatsappMensaje": "Hola CONAMIC, vengo de su página web y quiero más información.",
+  "telefono": "+57 (313) 418 4390",
+  "correo": "gerencia@conamic.org",
+  "direccion": "Carrera 24 # 86 A 20, Bogotá D.C., Colombia",
+  "horario": "Lunes a viernes, 8:00 a.m. a 5:00 p.m.",
+  "claveTema": "conamic-tema",
+  "menu": [
+    {
+      "id": "inicio",
+      "texto": "Inicio",
+      "href": "/"
+    },
+    {
+      "id": "quienes-somos",
+      "texto": "Quiénes Somos",
+      "href": "/quienes-somos"
+    },
+    {
+      "id": "servicios",
+      "texto": "Servicios",
+      "href": "/servicios"
+    },
+    {
+      "id": "beneficios",
+      "texto": "Beneficios",
+      "href": "/beneficios"
+    },
+    {
+      "id": "noticias",
+      "texto": "Actualidad",
+      "href": "/actualidad"
+    },
+    {
+      "id": "contacto",
+      "texto": "Contacto",
+      "href": "/contacto"
+    }
+  ],
+  "ctaPrincipal": {
+    "texto": "Quiero afiliarme",
+    "href": "/afiliacion"
+  },
+  "redes": [
+    {
+      "nombre": "Facebook",
+      "icono": "",
+      "href": ""
+    },
+    {
+      "nombre": "Instagram",
+      "icono": "",
+      "href": ""
+    },
+    {
+      "nombre": "YouTube",
+      "icono": "",
+      "href": ""
+    }
+  ],
+  "legales": [
+    {
+      "texto": "Política de privacidad",
+      "href": "/politica-privacidad"
+    },
+    {
+      "texto": "Tratamiento de datos",
+      "href": "/tratamiento-datos"
+    },
+    {
+      "texto": "Estatutos",
+      "href": "#"
+    }
+  ]
+}

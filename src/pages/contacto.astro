@@ -1,0 +1,140 @@
+---
+/**
+ * Página Contacto. Contenido desde src/datos/contacto.json.
+ * Formulario provisional vía WhatsApp, igual que Afiliación.
+ */
+import Layout from "../layouts/Layout.astro";
+import sitio from "../datos/sitio.json";
+import datos from "../datos/contacto.json";
+
+const { meta, hero, canales, formulario, ctaAfiliacion } = datos;
+const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(sitio.direccion)}`;
+---
+
+<Layout titulo={meta.titulo} descripcion={meta.descripcion} activa="contacto">
+  {/* ==================== HERO ==================== */}
+  <header class="portada">
+    <div class="container portada-grid">
+      <div>
+        <span class="eyebrow reveal"><span class="dot"></span> {hero.encabezado}</span>
+        <h1 class="reveal">{hero.titulo}</h1>
+        <p class="lead reveal" style="margin-bottom:14px;">{hero.texto}</p>
+      </div>
+      <div class="portada-visual reveal" data-parallax="0.08">
+        <img src={hero.imagen} alt={hero.imagenAlt} loading="eager" width="900" height="650" />
+      </div>
+    </div>
+  </header>
+
+  {/* ==================== CANALES + FORMULARIO ==================== */}
+  <section class="pad">
+    <div class="container contacto-grid">
+      <div class="reveal-left">
+        <h2 class="section-title" style="font-size:1.9rem;">Canales de atención</h2>
+        <ul class="lista-contacto" style="list-style:none; padding:0; margin:28px 0 0; display:grid; gap:18px;">
+          {canales.map((c) => (
+            <li class="reveal-up" style="display:flex; gap:16px; align-items:flex-start;">
+              <i data-lucide={c.icono} style="width:22px;height:22px;color:var(--crecimiento);flex-shrink:0;margin-top:2px;"></i>
+              <div>
+                <strong style="font-family:var(--font-display); font-size:.95rem;">{c.titulo}</strong>
+                {c.icono === "map-pin" ? (
+                  <p style="margin:2px 0 0;"><a href={urlMapa} target="_blank" rel="noopener" style="color:var(--text-muted); text-decoration:underline; text-decoration-color:var(--acento);">{c.valor}</a></p>
+                ) : (
+                  <p style="color:var(--text-muted); margin:2px 0 0;">{c.valor}</p>
+                )}
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <form id="formularioContacto" class="card reveal-right" style="padding:38px 34px; display:grid; gap:18px;" novalidate>
+        <h2 class="section-title" style="font-size:1.5rem;">{formulario.titulo}</h2>
+
+        <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+          <label for="cNombre">{formulario.campos.nombre}</label>
+          <input type="text" id="cNombre" name="nombre" required autocomplete="name" />
+        </div>
+
+        <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+          <label for="cCorreo">{formulario.campos.correo}</label>
+          <input type="email" id="cCorreo" name="correo" required autocomplete="email" />
+        </div>
+
+        <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+          <label for="cTelefono">{formulario.campos.telefono}</label>
+          <input type="tel" id="cTelefono" name="telefono" required autocomplete="tel" inputmode="tel" />
+        </div>
+
+        <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+          <label for="cMunicipio">{formulario.campos.municipio}</label>
+          <input type="text" id="cMunicipio" name="municipio" required />
+        </div>
+
+        <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+          <label for="cAsunto">{formulario.campos.asunto}</label>
+          <select id="cAsunto" name="asunto" required>
+            <option value="" disabled selected>Selecciona una opción</option>
+            {formulario.asuntos.map((a) => <option value={a}>{a}</option>)}
+          </select>
+        </div>
+
+        <div class="form-grupo" style="display:flex; flex-direction:column; gap:7px;">
+          <label for="cMensaje">{formulario.campos.mensaje}</label>
+          <textarea id="cMensaje" name="mensaje" rows="4"></textarea>
+        </div>
+
+        <label class="form-nota" style="display:flex; gap:10px; align-items:flex-start; cursor:pointer;">
+          <input type="checkbox" name="aceptaTratamiento" required style="width:auto; margin-top:3px;" />
+          <span>{formulario.aceptaTratamiento} <a href="/tratamiento-datos">Leer política</a></span>
+        </label>
+
+        <button type="submit" class="btn btn-primary">{formulario.boton}</button>
+      </form>
+    </div>
+  </section>
+
+  {/* ==================== CTA AFILIACIÓN — franja azul ==================== */}
+  <section class="pad franja-azul">
+    <div class="container" style="text-align:center; max-width:720px;">
+      <h2 class="section-title reveal">{ctaAfiliacion.titulo}</h2>
+      <p class="lead reveal" style="margin-top:16px;">{ctaAfiliacion.texto}</p>
+      <div class="reveal" style="margin-top:32px;">
+        <a href={ctaAfiliacion.botonHref} class="btn btn-primary">{ctaAfiliacion.botonTexto}</a>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script define:vars={{ WHATSAPP: sitio.whatsapp }}>
+  /* Envío provisional por WhatsApp (mismo patrón que Afiliación). */
+  (function () {
+    const form = document.getElementById("formularioContacto");
+    if (!form) return;
+
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.reportValidity();
+        return;
+      }
+
+      const fd = new FormData(form);
+      const lineas = [
+        "¡Hola CONAMIC! Escribo desde la página web.",
+        "",
+        `*Nombre:* ${fd.get("nombre") || ""}`,
+        `*Correo:* ${fd.get("correo") || "—"}`,
+        `*Teléfono:* ${fd.get("telefono") || ""}`,
+        `*Municipio:* ${fd.get("municipio") || ""}`,
+        `*Asunto:* ${fd.get("asunto") || ""}`,
+        `*Mensaje:* ${fd.get("mensaje") || "—"}`
+      ];
+
+      const url =
+        "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(lineas.join("\n"));
+      window.open(url, "_blank", "noopener");
+    });
+  })();
+</script>

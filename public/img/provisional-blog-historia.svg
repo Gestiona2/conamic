@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 533">
+<rect width="800" height="533" fill="#0d1f3d"/>
+<rect x="24" y="24" width="752" height="485" fill="none" stroke="#f0a202" stroke-opacity=".25" stroke-width="2" rx="18"/>
+<g transform="translate(400.0,252.5)" fill="none" stroke="#f0a202" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"><rect x="-46" y="-40" width="92" height="80" rx="10"/><path d="M-26 -12 h52 M-26 8 h38"/></g>
+<text x="400.0" y="369.76" font-family="Poppins, Montserrat, sans-serif" font-size="36" font-weight="600" fill="#ffffff" fill-opacity=".85" text-anchor="middle">Historias</text>
+</svg>

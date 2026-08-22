@@ -1,0 +1,75 @@
+{
+  "_comentario": "Contenido de Servicios. Fuente: insumos/negocio/01-evolucion-contenido-web.txt (sección 5)",
+  "meta": {
+    "titulo": "Servicios para Microempresarios — CONAMIC",
+    "descripcion": "Soluciones reales para los que mueven el país: blindaje legal, capacitación, acceso a crédito, incidencia gremial y red de convenios."
+  },
+  "hero": {
+    "encabezado": "Servicios",
+    "titulo": "Soluciones reales para los que mueven el país.",
+    "texto": "En CONAMIC no solo hablamos por ti; trabajamos contigo. Hemos diseñado una caja de herramientas pensada para la realidad del micronegocio de barrio, la unidad productiva informal y la parcela rural. Pasamos de la intención a la acción con resultados que puedes medir en tu negocio.",
+    "imagen": "/img/hero-servicios.jpg",
+    "imagenAlt": "Microempresarios acompañados por CONAMIC: su esfuerzo se convierte en progreso"
+  },
+  "items": [
+    {
+      "icono": "scale",
+      "titulo": "Blindaje Legal y Tributario",
+      "texto": "Entendemos que la norma a veces parece una barrera. Te ofrecemos orientación jurídica y fiscal para que formalizarte sea un camino de crecimiento, no una carga. Protegemos tu patrimonio y te enseñamos a manejar tus impuestos sin miedo.",
+      "gancho": "Hacemos que la ley trabaje para ti, no en tu contra."
+    },
+    {
+      "icono": "graduation-cap",
+      "titulo": "Capacitación para la Rentabilidad",
+      "texto": "Menos teoría y más resultados. Cursos prácticos en administración, marketing digital para negocios locales y técnicas de producción. Aprende a usar la tecnología para vender más y a organizar tus cuentas para que siempre sepas cuánto estás ganando.",
+      "gancho": "Conocimiento que se convierte en dinero el mismo día."
+    },
+    {
+      "icono": "banknote",
+      "titulo": "Motor de Proyectos y Finanzas",
+      "texto": "Buscamos el oxígeno que tu negocio necesita. Te ayudamos a estructurar proyectos para acceder a convocatorias de capital semilla y te guiamos hacia créditos de fomento con tasas justas, alejándote del riesgo del gota a gota.",
+      "gancho": "Puentes directos al capital que tu negocio merece."
+    },
+    {
+      "icono": "megaphone",
+      "titulo": "Incidencia y Defensa de Clase",
+      "texto": "Tu propuesta llega donde tiene que llegar. No dejamos que las leyes se hagan sin tu voz. Representamos al 99.6% de las empresas en las mesas de decisión nacional para defender la estabilidad de la economía popular.",
+      "gancho": "Tu fuerza individual multiplicada por millones."
+    },
+    {
+      "icono": "percent",
+      "titulo": "Red de Beneficios y Convenios",
+      "texto": "Ser parte de CONAMIC te da beneficios de gran empresa. Acceso a descuentos exclusivos en insumos, servicios de salud, tecnología y seguros, gracias a nuestra red de aliados estratégicos a nivel nacional.",
+      "gancho": "Ahorros que pagan tu afiliación desde el primer mes."
+    },
+    {
+      "icono": "clipboard-check",
+      "titulo": "Formalización Paso a Paso",
+      "texto": "Te acompañamos en el camino a la formalidad: matrícula ante las Cámaras de Comercio, régimen simplificado y trámites ante el Gobierno, explicados en lenguaje claro y con apoyo real en cada punto de atención.",
+      "gancho": "De la economía popular a la empresa formal, sin tropiezos."
+    }
+  ],
+  "ctaFinal": {
+    "titulo": "¿Listo para poner estas herramientas a trabajar en tu negocio?",
+    "botonTexto": "¡Quiero ser parte de CONAMIC!",
+    "botonHref": "/afiliacion"
+  },
+  "formularioInteres": {
+    "botonTarjeta": "Me interesa",
+    "tituloModal": "Solicitar este servicio",
+    "servicio": "Servicio de interés",
+    "campos": {
+      "nombre": "Nombre completo",
+      "telefono": "Teléfono",
+      "correo": "Correo electrónico (opcional)",
+      "mensaje": "Cuéntanos brevemente tu necesidad"
+    },
+    "botones": {
+      "cancelar": "Cancelar",
+      "registrar": "Registrar",
+      "whatsapp": "Enviar por WhatsApp"
+    },
+    "exitoTitulo": "¡Tu mensaje fue enviado!",
+    "exitoTexto": "Gracias por tu interés. Pronto un integrante del equipo CONAMIC se comunicará contigo."
+  }
+}

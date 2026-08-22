@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650">
+<rect width="900" height="650" fill="#0d1f3d"/>
+<rect x="24" y="24" width="852" height="602" fill="none" stroke="#f0a202" stroke-opacity=".25" stroke-width="2" rx="18"/>
+<g transform="translate(450.0,311.0)" fill="none" stroke="#f0a202" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M-42 -30 a10 10 0 0 1 16-8 l10 14 a10 10 0 0 1-2 13 l-7 7 a70 70 0 0 0 27 27 l7-7 a10 10 0 0 1 13-2 l14 10 a10 10 0 0 1-8 16 C-8 44 -44 8 -42 -30 z" fill="#f0a202" stroke="none"/></g>
+<text x="450.0" y="454.0" font-family="Poppins, Montserrat, sans-serif" font-size="40" font-weight="600" fill="#ffffff" fill-opacity=".85" text-anchor="middle">Canales de atención</text>
+</svg>

@@ -1,0 +1,74 @@
+{
+  "_comentario": "Contenido de Beneficios de Afiliarse. Fuente: insumos/negocio/01-evolucion-contenido-web.txt (sección 4)",
+  "meta": {
+    "titulo": "Beneficios de Afiliarse — CONAMIC",
+    "descripcion": "Tu afiliación es la mejor inversión para tu negocio: respaldo jurídico, financiación, mercados, formación y convenios exclusivos."
+  },
+  "hero": {
+    "encabezado": "Beneficios de Afiliación",
+    "titulo": "Tu afiliación es la mejor inversión para tu negocio.",
+    "subtitulo": "Únete a la red que transforma el esfuerzo individual en poder colectivo. Al afiliarte a CONAMIC, obtienes respaldo, crecimiento y una voz que nadie podrá ignorar.",
+    "imagen": "/img/hero-beneficios.jpg",
+    "imagenAlt": "Beneficios de CONAMIC: escudo, respaldo jurídico, financiación y mercados"
+  },
+  "items": [
+    {
+      "icono": "shield",
+      "titulo": "Respaldo Jurídico y Defensa Gremial",
+      "metafora": "El Escudo",
+      "texto": "No vuelvas a sentirte solo frente a la burocracia. Te brindamos orientación legal y técnica para defender tu negocio. Somos tu representación directa ante el Gobierno Nacional, asegurando que las leyes se hagan pensando en quienes trabajamos la tierra y el barrio.",
+      "idealPara": "El microempresario informal que teme a la norma o al acoso institucional."
+    },
+    {
+      "icono": "heart-pulse",
+      "titulo": "Acceso a Rutas de Financiación",
+      "metafora": "El Oxígeno",
+      "texto": "Te preparamos para el sistema financiero. Te acompañamos en la búsqueda de créditos de fomento, capital semilla y convenios con cooperativas que sí entienden la economía popular y rural. Olvídate del 'gota a gota', nosotros te abrimos la puerta al crédito justo.",
+      "idealPara": "El 99.6% que no tiene acceso a banca tradicional."
+    },
+    {
+      "icono": "store",
+      "titulo": "Mercados sin Fronteras",
+      "metafora": "La Vitrina",
+      "texto": "Llevamos tus productos más lejos. Participación preferencial en ferias regionales, ruedas de negocios y nuestra plataforma digital de comercio. Conectamos al productor rural directamente con el comprador urbano para eliminar intermediarios que se quedan con tu ganancia.",
+      "idealPara": "El productor rural y el artesano."
+    },
+    {
+      "icono": "brain",
+      "titulo": "Formación para la Productividad",
+      "metafora": "El Cerebro",
+      "texto": "Capacitación que sí sirve. Talleres prácticos en costos, marketing digital, asociatividad y nuevas tecnologías. No es teoría de salón; son herramientas para que mañana mismo tu negocio sea más eficiente y rentable.",
+      "idealPara": "Todos los segmentos que buscan modernizarse."
+    },
+    {
+      "icono": "piggy-bank",
+      "titulo": "Convenios Exclusivos",
+      "metafora": "El Ahorro",
+      "texto": "Ser parte de la mayoría tiene sus ventajas. Accede a descuentos en servicios de salud, seguros para tu negocio, insumos agrícolas y tecnología, gracias a las alianzas nacionales de CONAMIC.",
+      "idealPara": "Generar valor inmediato por el pago de la cuota."
+    }
+  ],
+  "ctaFinal": {
+    "titulo": "¿Listo para acceder a estos beneficios?",
+    "botonTexto": "Quiero afiliarme",
+    "botonHref": "/afiliacion"
+  },
+  "formularioInteres": {
+    "botonTarjeta": "Me interesa",
+    "tituloModal": "Quiero este beneficio",
+    "servicio": "Beneficio de interés",
+    "campos": {
+      "nombre": "Nombre completo",
+      "telefono": "Teléfono",
+      "correo": "Correo electrónico (opcional)",
+      "mensaje": "Cuéntanos brevemente tu caso"
+    },
+    "botones": {
+      "cancelar": "Cancelar",
+      "registrar": "Registrar",
+      "whatsapp": "Enviar por WhatsApp"
+    },
+    "exitoTitulo": "¡Tu mensaje fue enviado!",
+    "exitoTexto": "Gracias por tu interés. Pronto un integrante del equipo CONAMIC se comunicará contigo."
+  }
+}

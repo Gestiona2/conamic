@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 630">
+<rect width="900" height="630" fill="#0d1f3d"/>
+<rect x="24" y="24" width="852" height="582" fill="none" stroke="#f0a202" stroke-opacity=".25" stroke-width="2" rx="18"/>
+<g transform="translate(450.0,301.0)" fill="none" stroke="#f0a202" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"><path d="M-60 40 L-20 10 L10 34 M0 26 L36 0 L64 22"/><circle cx="-44" cy="48" r="6" fill="#f0a202" stroke="none"/></g>
+<text x="450.0" y="439.6" font-family="Poppins, Montserrat, sans-serif" font-size="40" font-weight="600" fill="#ffffff" fill-opacity=".85" text-anchor="middle">Manos que trabajan</text>
+</svg>

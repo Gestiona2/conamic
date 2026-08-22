@@ -1,0 +1,11 @@
+# dependencias y compilado
+node_modules/
+dist/
+.astro/
+
+# sistema
+.DS_Store
+*.log
+
+# insumos originales del cliente: no viajan al repo público
+insumos/

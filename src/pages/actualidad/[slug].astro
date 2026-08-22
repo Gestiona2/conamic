@@ -1,0 +1,99 @@
+---
+/**
+ * Página individual de artículo de Actualidad: /actualidad/[slug].
+ * Contenido desde src/datos/actualidad.json (campo `contenido`).
+ */
+import Layout from "../../layouts/Layout.astro";
+import sitio from "../../datos/sitio.json";
+import datos from "../../datos/actualidad.json";
+
+const { articulos } = datos;
+export function getStaticPaths() {
+  return datos.articulos.map((a) => ({ params: { slug: a.slug }, props: { articulo: a } }));
+}
+const { articulo } = Astro.props;
+const otros = articulos.filter((a) => a.slug !== articulo.slug);
+const urlWhatsApp = `https://wa.me/${sitio.whatsapp}?text=${encodeURIComponent(`¡Hola CONAMIC! Acabo de leer el artículo "${articulo.titulo}" y quiero saber más.`)}`;
+---
+
+<Layout titulo={`${articulo.titulo} — CONAMIC`} descripcion={articulo.descripcion} activa="noticias">
+  <header class="portada" style="padding-bottom:56px;">
+    <div class="container" style="max-width:860px;">
+      <a href="/actualidad" class="btn-volver">
+        <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> Volver a Actualidad
+      </a>
+      <span class="eyebrow reveal"><span class="dot"></span> {articulo.categoria} · {articulo.segmento}</span>
+      <h1 class="reveal" style="font-size:clamp(1.9rem,4vw,2.9rem);">{articulo.titulo}</h1>
+      <p class="reveal" style="color:var(--text-muted); margin-top:16px; display:flex; gap:18px; flex-wrap:wrap;">
+        <span style="display:inline-flex; align-items:center; gap:7px;"><i data-lucide="calendar" style="width:15px;height:15px;"></i>{articulo.fecha}</span>
+        <span style="display:inline-flex; align-items:center; gap:7px;"><i data-lucide="clock" style="width:15px;height:15px;"></i>{articulo.tiempoLectura} de lectura</span>
+      </p>
+    </div>
+  </header>
+
+  <section style="padding-top:0;">
+    <div class="container" style="max-width:860px;">
+      <img
+        src={articulo.imagen}
+        alt={articulo.imagenAlt}
+        loading="eager"
+        width="800" height="533"
+        style="width:100%; aspect-ratio:3/2; object-fit:cover; border-radius:22px; box-shadow:0 30px 70px var(--shadow);"
+      />
+    </div>
+  </section>
+
+  {/* ==================== CONTENIDO ==================== */}
+  <section class="pad" style="padding-top:48px;">
+    <div class="container" style="max-width:760px;">
+      <p class="lead reveal" style="margin-bottom:34px;">{articulo.descripcion}</p>
+      <div class="articulo-prose">
+        {articulo.contenido.map((b) => {
+          if (b.tipo === "subtitulo") return <h2>{b.texto}</h2>;
+          if (b.tipo === "lista") return <ul>{b.items.map((i) => <li set:html={i} />)}</ul>;
+          if (b.tipo === "consejo") return (
+            <aside class="consejo-caja">
+              <i data-lucide="lightbulb"></i>
+              <p>{b.texto}</p>
+            </aside>
+          );
+          return <p set:html={b.texto} />;
+        })}
+      </div>
+
+      <div class="reveal" style="margin-top:44px; padding-top:34px; border-top:1px solid var(--border); display:flex; gap:14px; flex-wrap:wrap; align-items:center;">
+        <a href="/actualidad" class="btn btn-secondary">
+          <i data-lucide="arrow-left" style="width:16px;height:16px;"></i> Volver al listado
+        </a>
+        <a href={urlWhatsApp} target="_blank" rel="noopener" class="btn btn-whatsapp">
+          <i data-lucide="message-circle" style="width:18px;height:18px;"></i> Preguntar por este tema
+        </a>
+        <a href="/afiliacion" class="btn btn-secondary">Quiero afiliarme</a>
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== MÁS ARTÍCULOS ==================== */}
+  <section class="pad franja-azul">
+    <div class="container">
+      <h2 class="section-title reveal">Sigue leyendo</h2>
+      <div class="grid-servicios" style="margin-top:36px;">
+        {otros.map((a) => (
+          <article class="glass tarjeta-lectura reveal-up">
+            <span class="tl-anio" style="font-size:.82rem;">{a.categoria}</span>
+            <h3 style="font-size:1.08rem; margin:12px 0 10px;"><a href={`/actualidad/${a.slug}`} style="color:#fff;">{a.titulo}</a></h3>
+            <p style="color:rgba(255,255,255,.75); font-size:.9rem;">{a.descripcion.slice(0, 110)}…</p>
+            <a href={`/actualidad/${a.slug}`} style="color:#f0c56a; font-weight:600; font-size:.88rem; display:inline-flex; align-items:center; gap:6px; margin-top:14px;">
+              Leer artículo <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+            </a>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<style>
+  .tarjeta-lectura { padding: 28px 26px; border-radius: 18px; transition: transform .25s ease, border-color .25s ease; }
+  .tarjeta-lectura:hover { transform: translateY(-5px); border-color: rgba(240,162,2,.5); }
+</style>

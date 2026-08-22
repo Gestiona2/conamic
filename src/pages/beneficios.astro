@@ -1,0 +1,176 @@
+---
+/**
+ * Página Beneficios de Afiliarse. Contenido desde src/datos/beneficios.json.
+ */
+import Layout from "../layouts/Layout.astro";
+import datos from "../datos/beneficios.json";
+import sitio from "../datos/sitio.json";
+
+const { meta, hero, items, ctaFinal, formularioInteres: fi } = datos;
+---
+
+<Layout titulo={meta.titulo} descripcion={meta.descripcion} activa="beneficios">
+  {/* ==================== HERO ==================== */}
+  <header class="portada">
+    <div class="container portada-grid">
+      <div>
+        <span class="eyebrow reveal"><span class="dot"></span> {hero.encabezado}</span>
+        <h1 class="reveal">{hero.titulo}</h1>
+        <p class="lead reveal" style="margin-bottom:14px;">{hero.subtitulo}</p>
+      </div>
+      <div class="portada-visual reveal" data-parallax="0.08">
+        {/* TODO: al cambiar por foto real, quitar este style para volver al recorte cover */}
+        <img src={hero.imagen} alt={hero.imagenAlt} loading="eager" width="900" height="650" style="object-fit:contain; background:var(--bg-soft);" />
+      </div>
+    </div>
+  </header>
+
+  {/* ==================== BENEFICIOS ==================== */}
+  <section class="pad" style="padding-top:40px;">
+    <div class="container">
+      <div style="display:grid; gap:26px; max-width:900px; margin:0 auto;">
+        {items.map((b) => (
+          <article class="card reveal-up" style="padding:38px 34px;">
+            <div style="display:flex; gap:24px; align-items:flex-start; flex-wrap:wrap;">
+              <i data-lucide={b.icono} style="width:46px;height:46px;color:var(--acento);flex-shrink:0;"></i>
+              <div style="flex:1; min-width:min(240px, 100%);">
+                <p style="font-family:var(--font-body); font-weight:600; font-size:.78rem; letter-spacing:.12em; text-transform:uppercase; color:var(--crecimiento); margin-bottom:8px;">{b.metafora}</p>
+                <h3 style="font-size:1.3rem; margin-bottom:12px;">{b.titulo}</h3>
+                <p style="color:var(--text-muted);">{b.texto}</p>
+                <p style="margin-top:16px; padding:12px 16px; border-left:3px solid var(--acento); background:var(--bg-soft); border-radius:0 10px 10px 0; font-size:.9rem; color:var(--text-soft);">
+                  <strong>Ideal para:</strong> {b.idealPara}
+                </p>
+                <button type="button" class="btn btn-secondary btn-interes" data-servicio={b.titulo} style="margin-top:20px;">
+                  {fi.botonTarjeta} <i data-lucide="arrow-right" style="width:16px;height:16px;"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== CTA FINAL — franja azul ==================== */}
+  <section class="pad franja-azul">
+    <div class="container" style="text-align:center;">
+      <h2 class="section-title reveal">{ctaFinal.titulo}</h2>
+      <div class="reveal" style="margin-top:34px;">
+        <a href={ctaFinal.botonHref} class="btn btn-primary" style="font-size:1.05rem; padding:17px 42px;">{ctaFinal.botonTexto}</a>
+      </div>
+    </div>
+  </section>
+
+  {/* ==================== MODAL "ME INTERESA" ==================== */}
+  <div class="modal-fondo" id="modalInteres" role="dialog" aria-modal="true" aria-labelledby="modalTitulo" hidden>
+    <div class="modal">
+      <button type="button" class="modal-cerrar" id="modalCerrar" aria-label="Cerrar formulario"><i data-lucide="x"></i></button>
+      <h3 id="modalTitulo" style="font-size:1.35rem; margin-bottom:6px;">{fi.tituloModal}</h3>
+      <p style="color:var(--text-muted); font-size:.92rem; margin-bottom:22px;">
+        {fi.servicio}: <strong style="color:var(--crecimiento);" id="modalServicio"></strong>
+      </p>
+
+      <form id="formInteres" novalidate style="display:grid; gap:16px;">
+        <div class="form-grupo">
+          <label for="iNombre">{fi.campos.nombre} *</label>
+          <input type="text" id="iNombre" name="nombre" required autocomplete="name" />
+        </div>
+        <div class="form-grupo">
+          <label for="iTelefono">{fi.campos.telefono} *</label>
+          <input type="tel" id="iTelefono" name="telefono" required autocomplete="tel" inputmode="tel" />
+        </div>
+        <div class="form-grupo">
+          <label for="iCorreo">{fi.campos.correo}</label>
+          <input type="email" id="iCorreo" name="correo" autocomplete="email" />
+        </div>
+        <div class="form-grupo">
+          <label for="iMensaje">{fi.campos.mensaje}</label>
+          <textarea id="iMensaje" name="mensaje" rows="3" style="min-height:90px;"></textarea>
+        </div>
+
+        <div class="modal-botones">
+          <button type="button" class="btn btn-secondary" id="btnCancelar">{fi.botones.cancelar}</button>
+          <button type="button" class="btn btn-secondary" id="btnRegistrar">{fi.botones.registrar}</button>
+          <button type="button" class="btn btn-whatsapp" id="btnWhatsapp">
+            <i data-lucide="message-circle" style="width:18px;height:18px;"></i> {fi.botones.whatsapp}
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  {/* Ventana emergente de éxito (simulada) */}
+  <div class="exito-fondo" id="exitoFondo" hidden>
+    <div class="exito-caja" role="alertdialog" aria-live="polite">
+      <span class="exito-icono"><i data-lucide="check-circle-2"></i></span>
+      <h3>{fi.exitoTitulo}</h3>
+      <p>{fi.exitoTexto}</p>
+      <button type="button" class="btn btn-primary" id="exitoAceptar">Aceptar</button>
+    </div>
+  </div>
+
+  <script define:vars={{ WHATSAPP: sitio.whatsapp }}>
+    const fondo = document.getElementById("modalInteres");
+    const caja = fondo.querySelector(".modal");
+    const campoServicio = document.getElementById("modalServicio");
+    const form = document.getElementById("formInteres");
+    const exito = document.getElementById("exitoFondo");
+
+    const abrir = (servicio) => {
+      campoServicio.textContent = servicio;
+      form.reset();
+      form.querySelectorAll(".invalido").forEach(el => el.classList.remove("invalido"));
+      fondo.hidden = false;
+      document.body.style.overflow = "hidden";
+      setTimeout(() => document.getElementById("iNombre").focus(), 60);
+    };
+    const cerrar = () => {
+      form.reset();
+      form.querySelectorAll(".invalido").forEach(el => el.classList.remove("invalido"));
+      fondo.hidden = true;
+      document.body.style.overflow = "";
+    };
+
+    document.querySelectorAll(".btn-interes").forEach(b =>
+      b.addEventListener("click", () => abrir(b.dataset.servicio))
+    );
+    document.getElementById("btnCancelar").addEventListener("click", cerrar);
+    document.getElementById("modalCerrar").addEventListener("click", cerrar);
+    fondo.addEventListener("click", (e) => { if (!caja.contains(e.target)) cerrar(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !fondo.hidden) cerrar(); });
+
+    // Registrar: simulado — valida lo mínimo y muestra la ventana emergente.
+    const validar = () => {
+      let ok = true;
+      for (const id of ["iNombre", "iTelefono"]) {
+        const el = document.getElementById(id);
+        el.classList.toggle("invalido", !el.value.trim());
+        if (!el.value.trim()) ok = false;
+      }
+      return ok;
+    };
+    document.getElementById("btnRegistrar").addEventListener("click", () => {
+      if (!validar()) return;
+      exito.hidden = false;
+    });
+    document.getElementById("exitoAceptar").addEventListener("click", () => {
+      exito.hidden = true;
+      cerrar();
+    });
+
+    // WhatsApp: arma todo el mensaje y abre la conversación.
+    document.getElementById("btnWhatsapp").addEventListener("click", () => {
+      if (!validar()) return;
+      const v = (id) => document.getElementById(id).value.trim();
+      const lineas = [
+        "Hola CONAMIC, me interesa uno de sus beneficios:",
+        `• Beneficio: ${campoServicio.textContent}`,
+        `• Nombre: ${v("iNombre")}`,
+        `• Teléfono: ${v("iTelefono")}`,
+        v("iCorreo") ? `• Correo: ${v("iCorreo")}` : null,
+        v("iMensaje") ? `• Mensaje: ${v("iMensaje")}` : null,
+      ].filter(Boolean);
+      window.open(`https://wa.me/${WHATSAPP}?text=${encodeURIComponent(lineas.join("\n"))}`, "_blank");
+    });
+  </script>
+</Layout>

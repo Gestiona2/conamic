@@ -1,0 +1,180 @@
+{
+  "_comentario": "Contenido de la página de inicio. Fuente: insumos/negocio/01-evolucion-contenido-web.txt",
+  "meta": {
+    "titulo": "CONAMIC — El 99.6% de Colombia se levanta aquí",
+    "descripcion": "Somos la base de la economía, el motor del empleo y la raíz de nuestra tierra. En CONAMIC, tu esfuerzo individual se convierte en poder colectivo."
+  },
+  "portada": {
+    "encabezado": "Confederación Nacional de Empresarios de la Microempresa",
+    "titulo": "El 99.6% de Colombia",
+    "tituloAcento": "se levanta aquí.",
+    "texto": "Somos la base de la economía, el motor del empleo y la raíz de nuestra tierra. En CONAMIC, tu esfuerzo individual se convierte en poder colectivo.",
+    "botones": [
+      {
+        "texto": "Quiero afiliarme",
+        "href": "/afiliacion",
+        "estilo": "btn-primary"
+      },
+      {
+        "texto": "Conócenos",
+        "href": "/quienes-somos",
+        "estilo": "btn-ghost"
+      }
+    ],
+    "imagen": "/img/portada-home.jpg",
+    "imagenAlt": "Microempresarios colombianos: la fuerza que nace desde la base"
+  },
+  "intro": {
+    "encabezado": "¿Por qué CONAMIC?",
+    "titulo": "Más que un gremio, somos tu respaldo.",
+    "texto1": "Sabemos lo que significa construir país desde el esfuerzo propio. Ya sea que tu oficina sea una parcela en el campo, una tienda de barrio o un taller en la ciudad, en CONAMIC entendemos que tu lucha diaria es la que mueve a Colombia.",
+    "texto2": "Somos la Confederación que une a los que el sistema llama 'informales' pero que nosotros llamamos imprescindibles. Estamos aquí para derribar las barreras que frenan tu crecimiento, para convertir la economía popular en una potencia agroindustrial y urbana, y para asegurar que nunca más vuelvas a enfrentar solo los retos del mercado o del gobierno. Si tú creces, Colombia avanza.",
+    "imagen": "/img/intro-conamic-b.jpg",
+    "imagenAlt": "Microempresarios colombianos en su negocio"
+  },
+  "servicios": {
+    "encabezado": "Blindaje empresarial",
+    "titulo": "No es solo una afiliación, es tu blindaje empresarial.",
+    "texto": "Cuatro pilares para que tu negocio deje de ser vulnerable y se convierta en fuerza colectiva.",
+    "items": [
+      {
+        "icono": "megaphone",
+        "titulo": "Defensa y Voz Política",
+        "texto": "Tú produces, nosotros defendemos. Llevamos tus necesidades reales —desde el estado de las vías rurales hasta las cargas tributarias urbanas— a las mesas donde se toman las decisiones. Ya no eres un número invisible; ahora tienes asiento en el diálogo nacional."
+      },
+      {
+        "icono": "sprout",
+        "titulo": "Escuela de Negocios para la Realidad",
+        "texto": "Herramientas prácticas para que tu negocio deje de ser un autoempleo y se convierta en una empresa rentable. Aprende desde finanzas básicas para el campo hasta marketing digital para tu local. Conocimiento que se aplica hoy mismo."
+      },
+      {
+        "icono": "route",
+        "titulo": "Rutas de Mercado y Crédito",
+        "texto": "Te abrimos puertas que antes estaban cerradas. Acceso a ferias regionales, ruedas de negocios sin intermediarios y asesoría para obtener créditos de fomento que sí entienden la economía popular y rural. Conectamos tu producto con el cliente ideal."
+      },
+      {
+        "icono": "link",
+        "titulo": "El Poder del 99.6%",
+        "texto": "El microempresario solo es vulnerable; unido es imparable. Al unirte a CONAMIC, entras a la red de apoyo más grande de Colombia. Convenios exclusivos, protección jurídica y el respaldo de miles de colegas que, como tú, están transformando el país."
+      },
+      {
+        "icono": "scale",
+        "titulo": "Blindaje Legal y Tributario",
+        "texto": "La norma deja de ser un obstáculo. Orientación jurídica y fiscal para que formalices tu negocio paso a paso, protejas tu patrimonio y cumplas tus obligaciones sin caer en trampas ni letra pequeña."
+      },
+      {
+        "icono": "piggy-bank",
+        "titulo": "Convenios que Valen por Sí Solos",
+        "texto": "Descuentos reales en salud, seguros, insumos y tecnología gracias a las alianzas nacionales de la Confederación. Para muchos de los nuestros, la afiliación no es un gasto: es el mejor ahorro del año."
+      }
+    ]
+  },
+  "cifras": {
+    "items": [
+      {
+        "icono": "flag",
+        "numero": "1986",
+        "sufijo": "",
+        "texto": "Fundación de la Confederación: cuatro décadas defendiendo la base productiva"
+      },
+      {
+        "icono": "network",
+        "numero": "100",
+        "sufijo": "+",
+        "texto": "Organizaciones de microempresarios articuladas a nivel nacional"
+      },
+      {
+        "icono": "map-pin",
+        "numero": "50",
+        "sufijo": "+",
+        "texto": "Municipios con presencia gremial desde nuestros inicios"
+      },
+      {
+        "icono": "users",
+        "numero": "99.6",
+        "sufijo": "%",
+        "texto": "De las empresas colombianas son micro y pequeñas unidades productivas"
+      }
+    ]
+  },
+  "identidad": {
+    "encabezado": "Identidad",
+    "titulo": "El rostro de quienes mueven a Colombia.",
+    "items": [
+      {
+        "etiqueta": "La Raíz · Mundo Rural",
+        "imagen": "/img/identidad-raiz.jpg",
+        "imagenAlt": "Productor rural colombiano en su parcela",
+        "texto": "Desde el campo, garantizamos la seguridad alimentaria del país. En CONAMIC, mi trabajo de sol a sol se reconoce como la empresa más importante de la nación."
+      },
+      {
+        "etiqueta": "El Corazón · Economía Popular",
+        "imagen": "/img/identidad-corazon.jpg",
+        "imagenAlt": "Comerciantes y artesanos de economía popular en su negocio",
+        "texto": "Mi negocio es el sustento de mi familia y el empleo de mi barrio. En CONAMIC, encontré el respaldo para que mi esfuerzo diario deje de ser invisible para el sistema."
+      },
+      {
+        "etiqueta": "El Futuro · Microempresa Urbana",
+        "imagen": "/img/identidad-futuro.jpg",
+        "imagenAlt": "Joven microempresario urbano con tecnología en su taller",
+        "texto": "Innovamos con lo que tenemos a la mano. En CONAMIC, nos unimos para que la falta de capital no sea el fin de nuestras ideas, sino el inicio de nuestra fuerza gremial."
+      }
+    ]
+  },
+  "radar": {
+    "encabezado": "Actualidad",
+    "titulo": "CONAMIC al día: Defendiendo tus intereses.",
+    "texto": "Radar Gremial: los ejes que estamos siguiendo por ti ahora mismo.",
+    "items": [
+      {
+        "icono": "landmark",
+        "titulo": "Radar Legislativo",
+        "subtitulo": "Seguimiento a la Ley de Financiamiento y Economía Popular",
+        "texto": "Analizamos las nuevas medidas del Gobierno para asegurar que los beneficios lleguen realmente al micronegocio de barrio y no se queden en la burocracia.",
+        "href": "/actualidad/ley-financiamiento-que-significa-para-tu-negocio"
+      },
+      {
+        "icono": "map-pinned",
+        "titulo": "Oportunidades del Territorio",
+        "subtitulo": "Monitoreo de Convocatorias Rurales y Urbanas",
+        "texto": "Estamos consolidando las mejores oportunidades de fomento y crédito para el sector agropecuario y comercial. ¡Pronto nuestra primera gran convocatoria nacional!",
+        "href": "/actualidad/convocatorias-fomento-como-prepararte"
+      },
+      {
+        "icono": "calendar-days",
+        "titulo": "Agenda de Unión",
+        "subtitulo": "Preparando el Gran Encuentro del 99.6%",
+        "texto": "Estamos diseñando los espacios de diálogo regional para que la voz de los microempresarios de las 5 zonas del país sea una sola. ¡Espéralo!",
+        "href": "/actualidad/gran-encuentro-del-99-6-por-ciento"
+      }
+    ]
+  },
+  "faq": {
+    "encabezado": "Preguntas",
+    "titulo": "Todo lo que necesitas saber para unirte.",
+    "items": [
+      {
+        "pregunta": "¿Cuáles son los requisitos para unirme?",
+        "respuesta": "En CONAMIC cabemos todos. Solo necesitas ser un microempresario activo, ya sea en el campo o en la ciudad. No importa si eres una asociación constituida, una federación o un micronegocio independiente. Si produces y generas sustento, eres bienvenido. Nosotros te guiaremos en tu camino hacia el fortalecimiento empresarial."
+      },
+      {
+        "pregunta": "¿Cuánto cuesta la afiliación?",
+        "respuesta": "Tu inversión en el gremio es proporcional al tamaño de tu negocio. Tenemos planes diseñados para que desde el productor más pequeño hasta la asociación más grande puedan acceder al respaldo gremial sin afectar su caja. Un asesor te explicará la categoría que mejor se adapta a tu realidad actual."
+      },
+      {
+        "pregunta": "¿Cuánto tarda el proceso de ingreso?",
+        "respuesta": "Nuestra meta es que empieces a disfrutar de tus beneficios en tiempo récord. Una vez recibamos tu información, un asesor se contactará contigo en menos de 48 horas para validar tus datos y darte la bienvenida oficial a la Confederación."
+      },
+      {
+        "pregunta": "¿Puedo afiliarme si soy persona natural o aún no tengo Cámara de Comercio?",
+        "respuesta": "¡Claro que sí! Gran parte de la fuerza productiva de Colombia nace desde la persona natural y la economía popular. En CONAMIC te recibimos y te brindamos el respaldo jurídico y técnico que necesitas para que tu negocio crezca con seguridad hasta que decidas dar el paso a la formalización total."
+      }
+    ]
+  },
+  "ctaFinal": {
+    "titulo": "Tu esfuerzo individual se convierte en poder colectivo.",
+    "texto": "Afíliate hoy y activa tu blindaje empresarial: representación, formación, crédito y convenios.",
+    "botonTexto": "¡Quiero ser parte de CONAMIC!",
+    "botonHref": "/afiliacion"
+  }
+}
