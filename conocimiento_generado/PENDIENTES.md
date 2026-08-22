@@ -17,7 +17,7 @@ grupo (SVG locales en `public/img/provisional-*.svg`, siempre cargan).
 
 | Dónde | Qué debería ir ahí | Medida | Archivo a editar |
 |---|---|---|---|
-| Junta directiva (7 personas) | Foto oficial de cada directivo | 400×400 (círculo) | `quienes-somos.json` → `equipo.miembros[].foto` — requiere agregar el campo y tocar `quienes-somos.astro` |
+| Junta directiva (7 personas) | Foto oficial de cada directivo | 400×400 (círculo) | `quienes-somos.json` → `equipo.miembros[].foto` |
 
 ## Contenido provisional
 

@@ -63,15 +63,17 @@ Una entrada por sección: qué es, dónde vive el contenido y sus límites.
 ## Quiénes somos: misión/visión, valores, historia, junta, alianzas
 
 - **Dónde está:** `src/datos/quienes-somos.json`
-- Secciones: `misionVision` (2 párrafos), `valores.items` (3), `historia` (2 párrafos + `hitos` con `anio`/`texto`), `equipo.miembros` (`nombre`, `cargo`), `alianzas.items` (3).
+- Secciones: `misionVision` (2 párrafos), `valores.items` (3), `historia` (2 párrafos + `hitos` con `anio`/`texto`), `equipo.miembros` (`nombre`, `cargo`, `foto`), `alianzas.items` (3).
 - **Historia:** timeline zigzag (clases `.timeline*` en global.css) — línea central
   degradada, chips de año amarillos y tarjetas de vidrio alternando lados; en móvil
   la línea pasa a la izquierda. Agregar/quitar hitos solo tocando el JSON.
 - **Junta directiva:** slider con scroll-snap (`.slider-*`, `.directivo-*`) — flechas,
   7 puntos indicadores y arrastre táctil; muestra 3 tarjetas en escritorio,
   2 en tablet y ~1.2 en móvil. El JS vive al final de `quienes-somos.astro`.
-  Cada miembro muestra un círculo con placeholder; la foto oficial va en `PENDIENTES.md`
-  (campo futuro: `equipo.miembros[].foto`).
+- **Fotos de los directivos:** cada miembro tiene su campo `foto` en el JSON. Hoy apuntan
+  a los SVG provisionales. Para poner la foto real: guardarla en `public/img/`, cuadrada de
+  400×400 px, y cambiar la ruta en `foto`. Se recorta en círculo sola. **No hay que tocar
+  código.**
 
 ## Actualidad: artículos individuales `/actualidad/[slug]`
 

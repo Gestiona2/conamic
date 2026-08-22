@@ -89,12 +89,11 @@ const { meta, hero, misionVision, valores, historia, equipo, alianzas } = datos;
       <div class="slider-envoltura reveal-up">
         <button class="slider-flecha" id="eqPrev" type="button" aria-label="Directivo anterior"><i data-lucide="chevron-left"></i></button>
         <div class="slider-pista" id="eqPista">
-          {equipo.miembros.map((m, i) => (
+          {equipo.miembros.map((m) => (
             <article class="directivo-card">
-              <!-- TODO: reemplazar placeholder con foto oficial del directivo (400x400) -->
               <img
                 class="directivo-foto"
-                src={`/img/provisional-directivo-${i + 1}.svg`}
+                src={m.foto}
                 alt={`Foto de ${m.nombre}`}
                 loading="eager"
                 width="112" height="112"

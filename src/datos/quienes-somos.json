@@ -1,11 +1,9 @@
 {
   "_comentario": "Contenido de Quiénes Somos. Fuente: insumos/negocio/01-evolucion-contenido-web.txt",
-
   "meta": {
     "titulo": "Quiénes Somos — CONAMIC",
     "descripcion": "La fuerza que nace desde la base. Conoce la historia, misión, visión y el equipo directivo de la Confederación Nacional de Empresarios de la Microempresa."
   },
-
   "hero": {
     "encabezado": "Quiénes Somos",
     "titulo": "La fuerza que nace desde la base.",
@@ -14,14 +12,12 @@
     "imagen": "/img/intro-conamic.jpg",
     "imagenAlt": "Costurera microempresaria trabajando en su taller"
   },
-
   "misionVision": {
     "misionTitulo": "Nuestro Propósito (Misión)",
     "misionTexto": "Unir el tejido disperso de la microempresa urbana y rural. Trabajamos para transformar la economía popular en una estructura sólida, competitiva y protegida, asegurando que cada microempresario tenga las herramientas, el crédito y la voz política que se merece.",
     "visionTitulo": "Nuestra Apuesta (Visión)",
     "visionTexto": "Proyectamos un país donde el microempresario sea el eje central del desarrollo. Queremos una Colombia con un campo tecnificado y una ciudad emprendedora, donde la formalidad sea un camino de éxito y no una carga, y donde CONAMIC sea el respaldo innegociable de cada persona que decide crear empresa."
   },
-
   "valores": {
     "titulo": "Lo que nos define — Valores en acción",
     "items": [
@@ -42,7 +38,6 @@
       }
     ]
   },
-
   "historia": {
     "titulo": "40 años caminando junto a los que construyen país.",
     "parrafos": [
@@ -50,30 +45,75 @@
       "Nuestra historia no son solo papeles o registros; son cuatro décadas recorriendo las veredas, las plazas de mercado y los barrios, entendiendo que el 99.6% de las empresas de este país merecen un lugar en la mesa donde se toman las decisiones. No estamos probando suerte; sabemos cómo proteger tu esfuerzo porque llevamos toda una vida haciéndolo."
     ],
     "hitos": [
-      { "anio": "1984", "texto": "El Gobierno Nacional formula el primer Plan Nacional para el Desarrollo de la Microempresa." },
-      { "anio": "1985", "texto": "Primer taller nacional de asociaciones de microempresas, con apoyo de SENA y UNICEF." },
-      { "anio": "1986", "texto": "Fundación oficial de CONAMIC: la primera confederación nacional del sector microempresarial." },
-      { "anio": "1997", "texto": "Consolidación registral ante la Cámara de Comercio de Bogotá." },
-      { "anio": "2010", "texto": "Resolución ministerial reconoce a CONAMIC como representante gremial ante el Consejo Superior de Microempresa." },
-      { "anio": "2026", "texto": "Reforma estatutaria para integrar federaciones, cooperativas y actores de la economía popular." }
+      {
+        "anio": "1984",
+        "texto": "El Gobierno Nacional formula el primer Plan Nacional para el Desarrollo de la Microempresa."
+      },
+      {
+        "anio": "1985",
+        "texto": "Primer taller nacional de asociaciones de microempresas, con apoyo de SENA y UNICEF."
+      },
+      {
+        "anio": "1986",
+        "texto": "Fundación oficial de CONAMIC: la primera confederación nacional del sector microempresarial."
+      },
+      {
+        "anio": "1997",
+        "texto": "Consolidación registral ante la Cámara de Comercio de Bogotá."
+      },
+      {
+        "anio": "2010",
+        "texto": "Resolución ministerial reconoce a CONAMIC como representante gremial ante el Consejo Superior de Microempresa."
+      },
+      {
+        "anio": "2026",
+        "texto": "Reforma estatutaria para integrar federaciones, cooperativas y actores de la economía popular."
+      }
     ]
   },
-
   "equipo": {
     "titulo": "Nuestro Equipo Directivo",
     "texto": "Un grupo de líderes microempresarios comprometidos con el desarrollo del sector.",
     "miembros": [
-      { "nombre": "Antonio Francisco Osorio Melo", "cargo": "Presidente Nacional" },
-      { "nombre": "Zoraida Pabón", "cargo": "Vicepresidenta Nacional" },
-      { "nombre": "Luz Marina Miranda", "cargo": "Miembro Junta Directiva" },
-      { "nombre": "Zulma Santamaría", "cargo": "Miembro Junta Directiva" },
-      { "nombre": "María Isbelia Gutiérrez", "cargo": "Miembro Junta Directiva" },
-      { "nombre": "Enrique Ramírez", "cargo": "Miembro Junta Directiva" },
-      { "nombre": "Edison Díaz", "cargo": "Miembro Junta Directiva" }
+      {
+        "nombre": "Antonio Francisco Osorio Melo",
+        "cargo": "Presidente Nacional",
+        "foto": "/img/provisional-directivo-1.svg"
+      },
+      {
+        "nombre": "Zoraida Pabón",
+        "cargo": "Vicepresidenta Nacional",
+        "foto": "/img/provisional-directivo-2.svg"
+      },
+      {
+        "nombre": "Luz Marina Miranda",
+        "cargo": "Miembro Junta Directiva",
+        "foto": "/img/provisional-directivo-3.svg"
+      },
+      {
+        "nombre": "Zulma Santamaría",
+        "cargo": "Miembro Junta Directiva",
+        "foto": "/img/provisional-directivo-4.svg"
+      },
+      {
+        "nombre": "María Isbelia Gutiérrez",
+        "cargo": "Miembro Junta Directiva",
+        "foto": "/img/provisional-directivo-5.svg"
+      },
+      {
+        "nombre": "Enrique Ramírez",
+        "cargo": "Miembro Junta Directiva",
+        "foto": "/img/provisional-directivo-6.svg"
+      },
+      {
+        "nombre": "Edison Díaz",
+        "cargo": "Miembro Junta Directiva",
+        "foto": "/img/provisional-directivo-7.svg"
+      }
     ],
-    "notaFoto": "Pendiente: fotos oficiales de los directivos — usar placeholder hasta tenerlas"
+    "notaFoto": "Pendiente: fotos oficiales de los directivos — usar placeholder hasta tenerlas",
+    "_limiteFoto": "Foto cuadrada, 400x400 px, se recorta en circulo. Guardarla en public/img/ y poner la ruta en 'foto'. Mientras no haya foto real, dejar el SVG provisional."
   },
-
   "alianzas": {
     "titulo": "Puentes que abren puertas a tu negocio.",
     "texto": "En CONAMIC sabemos que el 99.6% unido tiene poder, pero conectado tiene futuro. No trabajamos solos. Hemos construido una red de aliados estratégicos con el único fin de que los recursos, las leyes y los proyectos dejen de quedarse en el papel y lleguen finalmente a tu parcela, a tu tienda o a tu taller.",
