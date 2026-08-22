@@ -7,6 +7,7 @@
  */
 import "../styles/global.css";
 import sitio from "../datos/sitio.json";
+import { ruta } from "../lib/ruta";
 
 interface Props {
   titulo: string;
@@ -25,7 +26,7 @@ const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{titulo}</title>
     <meta name="description" content={descripcion} />
-    <link rel="icon" href="/brand/favicon.png" />
+    <link rel="icon" href={ruta("/brand/favicon.png")} />
 
     <!-- Redes sociales -->
     <meta property="og:title" content={titulo} />
@@ -56,19 +57,19 @@ const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
     <!-- ==================== MENÚ ==================== -->
     <header class="nav" id="nav">
       <div class="container nav-inner">
-        <a href="/" class="nav-logo">
-          <img src="/brand/logo.png" alt={sitio.nombre} />
+        <a href={ruta("/")} class="nav-logo">
+          <img src={ruta("/brand/logo.png")} alt={sitio.nombre} />
         </a>
 
         <nav class="nav-links" id="navLinks" aria-label="Navegación principal">
           {sitio.menu.map((item) => (
-            <a href={item.href} class={activa === item.id ? "activo" : ""}>{item.texto}</a>
+            <a href={ruta(item.href)} class={activa === item.id ? "activo" : ""}>{item.texto}</a>
           ))}
         </nav>
 
         <div class="nav-actions">
           <button id="botonTema" aria-label="Cambiar entre tema claro y oscuro"></button>
-          <a href={sitio.ctaPrincipal.href} class="btn btn-primary">{sitio.ctaPrincipal.texto}</a>
+          <a href={ruta(sitio.ctaPrincipal.href)} class="btn btn-primary">{sitio.ctaPrincipal.texto}</a>
           <button id="botonMenu" aria-label="Abrir menú" aria-expanded="false">
             <svg class="icon-menu" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
             <svg class="icon-close" xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
@@ -87,7 +88,7 @@ const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
         <div class="pie-grid">
           <div>
             <div class="pie-logo">
-              <img src="/brand/logo.png" alt={sitio.nombre} loading="lazy" />
+              <img src={ruta("/brand/logo.png")} alt={sitio.nombre} loading="lazy" />
             </div>
             <p class="pie-tagline">La fuerza que nace desde la base.</p>
             <p class="pie-desc">
@@ -95,7 +96,7 @@ const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
             </p>
             <div class="pie-redes">
               {sitio.redes.map((r) => (
-                r.href && <a href={r.href} target="_blank" rel="noopener" aria-label={r.nombre}><i data-lucide="globe"></i></a>
+                r.href && <a href={ruta(r.href)} target="_blank" rel="noopener" aria-label={r.nombre}><i data-lucide="globe"></i></a>
               ))}
             </div>
           </div>
@@ -104,7 +105,7 @@ const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
             <h5>Nuestra Lucha</h5>
             <ul>
               {sitio.menu.slice(0, 4).map((item) => (
-                <li><a href={item.href}>{item.texto}</a></li>
+                <li><a href={ruta(item.href)}>{item.texto}</a></li>
               ))}
             </ul>
           </div>
@@ -112,9 +113,9 @@ const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
           <div>
             <h5>Únete</h5>
             <ul>
-              <li><a href="/afiliacion">Afíliate</a></li>
-              <li><a href="/actualidad">Centro de Fortalecimiento</a></li>
-              <li><a href="/contacto">Contáctanos</a></li>
+              <li><a href={ruta("/afiliacion")}>Afíliate</a></li>
+              <li><a href={ruta("/actualidad")}>Centro de Fortalecimiento</a></li>
+              <li><a href={ruta("/contacto")}>Contáctanos</a></li>
             </ul>
           </div>
 
@@ -132,7 +133,7 @@ const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
         <div class="pie-abajo">
           <p>&copy; {anio} {sitio.razonSocial} · NIT {sitio.nit}. Todos los derechos reservados.</p>
           <nav class="pie-legales">
-            {sitio.legales.map((l) => <a href={l.href}>{l.texto}</a>)}
+            {sitio.legales.map((l) => <a href={ruta(l.href)}>{l.texto}</a>)}
           </nav>
         </div>
       </div>
@@ -156,9 +157,9 @@ const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
       Librerías guardadas dentro del sitio, no desde servidores ajenos.
       Privacidad + longevidad. Ver conocimiento/politicas.md.
     -->
-    <script is:inline src="/vendor/lucide/lucide.min.js"></script>
-    <script is:inline src="/vendor/gsap/gsap.min.js"></script>
-    <script is:inline src="/vendor/gsap/ScrollTrigger.min.js"></script>
+    <script is:inline src={ruta("/vendor/lucide/lucide.min.js")}></script>
+    <script is:inline src={ruta("/vendor/gsap/gsap.min.js")}></script>
+    <script is:inline src={ruta("/vendor/gsap/ScrollTrigger.min.js")}></script>
 
     <script is:inline define:vars={{ clave: sitio.claveTema }}>
       const $ = (s) => document.querySelector(s);

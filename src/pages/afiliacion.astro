@@ -9,6 +9,7 @@
 import Layout from "../layouts/Layout.astro";
 import sitio from "../datos/sitio.json";
 import datos from "../datos/afiliacion.json";
+import { ruta } from "../lib/ruta";
 
 const { meta, hero, pasos, formulario, cierre, faq } = datos;
 ---
@@ -52,7 +53,7 @@ const { meta, hero, pasos, formulario, cierre, faq } = datos;
 
           <!-- Imagen: apretón de manos real, manos que trabajan (instrucción del cliente) -->
           <img
-            src="/img/afiliacion-manos.jpg"
+            src={ruta("/img/afiliacion-manos.jpg")}
             alt="Manos de microempresarios trabajando juntos"
             loading="lazy" width="600" height="420"
             style="border-radius:18px; margin-top:34px; box-shadow:0 24px 60px rgba(0,0,0,.35);"
@@ -100,7 +101,7 @@ const { meta, hero, pasos, formulario, cierre, faq } = datos;
 
           <label class="form-nota" style="display:flex; gap:10px; align-items:flex-start; cursor:pointer;">
             <input type="checkbox" name="aceptaTratamiento" required style="width:auto; margin-top:3px;" />
-            <span>{formulario.campos.aceptaTratamiento} <a href="/tratamiento-datos" style="color:var(--acento);">Leer política</a></span>
+            <span>{formulario.campos.aceptaTratamiento} <a href={ruta("/tratamiento-datos")} style="color:var(--acento);">Leer política</a></span>
           </label>
 
           <button type="submit" class="btn btn-primary" style="font-size:1.02rem;">{formulario.boton}</button>

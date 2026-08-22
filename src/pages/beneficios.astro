@@ -5,6 +5,7 @@
 import Layout from "../layouts/Layout.astro";
 import datos from "../datos/beneficios.json";
 import sitio from "../datos/sitio.json";
+import { ruta } from "../lib/ruta";
 
 const { meta, hero, items, ctaFinal, formularioInteres: fi } = datos;
 ---
@@ -20,7 +21,7 @@ const { meta, hero, items, ctaFinal, formularioInteres: fi } = datos;
       </div>
       <div class="portada-visual reveal" data-parallax="0.08">
         {/* TODO: al cambiar por foto real, quitar este style para volver al recorte cover */}
-        <img src={hero.imagen} alt={hero.imagenAlt} loading="eager" width="900" height="650" style="object-fit:contain; background:var(--bg-soft);" />
+        <img src={ruta(hero.imagen)} alt={hero.imagenAlt} loading="eager" width="900" height="650" style="object-fit:contain; background:var(--bg-soft);" />
       </div>
     </div>
   </header>
@@ -56,7 +57,7 @@ const { meta, hero, items, ctaFinal, formularioInteres: fi } = datos;
     <div class="container" style="text-align:center;">
       <h2 class="section-title reveal">{ctaFinal.titulo}</h2>
       <div class="reveal" style="margin-top:34px;">
-        <a href={ctaFinal.botonHref} class="btn btn-primary" style="font-size:1.05rem; padding:17px 42px;">{ctaFinal.botonTexto}</a>
+        <a href={ruta(ctaFinal.botonHref)} class="btn btn-primary" style="font-size:1.05rem; padding:17px 42px;">{ctaFinal.botonTexto}</a>
       </div>
     </div>
   </section>

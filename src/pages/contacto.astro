@@ -6,6 +6,7 @@
 import Layout from "../layouts/Layout.astro";
 import sitio from "../datos/sitio.json";
 import datos from "../datos/contacto.json";
+import { ruta } from "../lib/ruta";
 
 const { meta, hero, canales, formulario, ctaAfiliacion } = datos;
 const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(sitio.direccion)}`;
@@ -21,7 +22,7 @@ const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
         <p class="lead reveal" style="margin-bottom:14px;">{hero.texto}</p>
       </div>
       <div class="portada-visual reveal" data-parallax="0.08">
-        <img src={hero.imagen} alt={hero.imagenAlt} loading="eager" width="900" height="650" />
+        <img src={ruta(hero.imagen)} alt={hero.imagenAlt} loading="eager" width="900" height="650" />
       </div>
     </div>
   </header>
@@ -86,7 +87,7 @@ const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
 
         <label class="form-nota" style="display:flex; gap:10px; align-items:flex-start; cursor:pointer;">
           <input type="checkbox" name="aceptaTratamiento" required style="width:auto; margin-top:3px;" />
-          <span>{formulario.aceptaTratamiento} <a href="/tratamiento-datos">Leer política</a></span>
+          <span>{formulario.aceptaTratamiento} <a href={ruta("/tratamiento-datos")}>Leer política</a></span>
         </label>
 
         <button type="submit" class="btn btn-primary">{formulario.boton}</button>
@@ -100,7 +101,7 @@ const urlMapa = `https://www.google.com/maps/search/?api=1&query=${encodeURIComp
       <h2 class="section-title reveal">{ctaAfiliacion.titulo}</h2>
       <p class="lead reveal" style="margin-top:16px;">{ctaAfiliacion.texto}</p>
       <div class="reveal" style="margin-top:32px;">
-        <a href={ctaAfiliacion.botonHref} class="btn btn-primary">{ctaAfiliacion.botonTexto}</a>
+        <a href={ruta(ctaAfiliacion.botonHref)} class="btn btn-primary">{ctaAfiliacion.botonTexto}</a>
       </div>
     </div>
   </section>

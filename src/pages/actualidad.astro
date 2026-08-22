@@ -5,6 +5,7 @@
  */
 import Layout from "../layouts/Layout.astro";
 import datos from "../datos/actualidad.json";
+import { ruta } from "../lib/ruta";
 
 const { meta, hero, categorias, articulos } = datos;
 ---
@@ -41,13 +42,13 @@ const { meta, hero, categorias, articulos } = datos;
         {articulos.map((a) => (
           <article class="card articulo-card reveal-up" data-categoria={a.categoria}>
             <!-- TODO: reemplazar placeholder con imagen real del artículo -->
-            <img src={a.imagen} alt={a.imagenAlt} loading="lazy" width="600" height="400" />
+            <img src={ruta(a.imagen)} alt={a.imagenAlt} loading="lazy" width="600" height="400" />
             <div class="articulo-cuerpo">
               <span class="articulo-etiqueta">{a.categoria} · {a.segmento}</span>
-              <h3><a href={`/actualidad/${a.slug}`}>{a.titulo}</a></h3>
+              <h3><a href={ruta(`/actualidad/${a.slug}`)}>{a.titulo}</a></h3>
               <p>{a.descripcion}</p>
               <p class="articulo-meta">{a.fecha} · {a.tiempoLectura} de lectura</p>
-              <a class="articulo-leer" href={`/actualidad/${a.slug}`}>Leer más <i data-lucide="arrow-right" style="width:15px;height:15px;"></i></a>
+              <a class="articulo-leer" href={ruta(`/actualidad/${a.slug}`)}>Leer más <i data-lucide="arrow-right" style="width:15px;height:15px;"></i></a>
             </div>
           </article>
         ))}
@@ -67,7 +68,7 @@ const { meta, hero, categorias, articulos } = datos;
       <h2 class="section-title reveal">¿Quieres recibir estas guías antes que nadie?</h2>
       <p class="lead reveal" style="margin-top:16px;">Afíliate y recibe directamente en tu WhatsApp el conocimiento que tu negocio necesita.</p>
       <div class="reveal" style="margin-top:34px; display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
-        <a href="/afiliacion" class="btn btn-primary">Quiero afiliarme</a>
+        <a href={ruta("/afiliacion")} class="btn btn-primary">Quiero afiliarme</a>
       </div>
     </div>
   </section>

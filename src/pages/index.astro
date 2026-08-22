@@ -8,6 +8,7 @@
 import Layout from "../layouts/Layout.astro";
 import datos from "../datos/inicio.json";
 import articulosBlog from "../datos/actualidad.json";
+import { ruta } from "../lib/ruta";
 
 const { meta, portada, intro, servicios, cifras, identidad, radar, faq, ctaFinal } = datos;
 /* Los 3 artículos más nuevos del blog para el bloque Actualidad del home. */
@@ -29,12 +30,12 @@ const ultimosArticulos = [...articulosBlog.articulos]
         <p class="lead reveal">{portada.texto}</p>
         <div class="portada-botones reveal">
           {portada.botones.map((b) => (
-            <a href={b.href} class={`btn ${b.estilo}`}>{b.texto}</a>
+            <a href={ruta(b.href)} class={`btn ${b.estilo}`}>{b.texto}</a>
           ))}
         </div>
       </div>
       <div class="portada-visual reveal" data-parallax="0.08">
-        <img src={portada.imagen} alt={portada.imagenAlt} loading="eager" width="1200" height="900" />
+        <img src={ruta(portada.imagen)} alt={portada.imagenAlt} loading="eager" width="1200" height="900" />
       </div>
     </div>
   </header>
@@ -42,7 +43,7 @@ const ultimosArticulos = [...articulosBlog.articulos]
   {/* ==================== INTRO ==================== */}
   <section class="pad" id="porque">
     <div class="container nosotros-grid">
-      <img class="reveal-left" src={intro.imagen} alt={intro.imagenAlt} loading="eager" width="1200" height="800" />
+      <img class="reveal-left" src={ruta(intro.imagen)} alt={intro.imagenAlt} loading="eager" width="1200" height="800" />
       <div class="reveal-right">
         <span class="eyebrow"><span class="dot"></span> {intro.encabezado}</span>
         <h2 class="section-title">{intro.titulo}</h2>
@@ -93,7 +94,7 @@ const ultimosArticulos = [...articulosBlog.articulos]
       <div class="grid-testimonios" data-stagger>
         {identidad.items.map((t) => (
           <figure class="card articulo-card reveal-up">
-            <img src={t.imagen} alt={t.imagenAlt} loading="lazy" width="600" height="400" />
+            <img src={ruta(t.imagen)} alt={t.imagenAlt} loading="lazy" width="600" height="400" />
             <div class="articulo-cuerpo">
               <span class="articulo-etiqueta">{t.etiqueta}</span>
               <blockquote>"{t.texto}"</blockquote>
@@ -115,14 +116,14 @@ const ultimosArticulos = [...articulosBlog.articulos]
         {ultimosArticulos.map((a) => (
           <article class="glass reveal-up" style="padding: 0; overflow:hidden; display:flex; flex-direction:column; border-radius:18px;">
             {!a.imagen.includes("provisional") && (
-              <img src={a.imagen} alt={a.imagenAlt} loading="eager" width="800" height="450" style="width:100%; aspect-ratio:16/9; object-fit:cover; display:block;" />
+              <img src={ruta(a.imagen)} alt={a.imagenAlt} loading="eager" width="800" height="450" style="width:100%; aspect-ratio:16/9; object-fit:cover; display:block;" />
             )}
             <div style="padding:26px 28px 28px; display:flex; flex-direction:column; flex:1;">
               <span class="tl-anio" style="font-size:.78rem;">{a.categoria}</span>
-              <h3 style="margin:14px 0 10px; font-size:1.08rem;"><a href={`/actualidad/${a.slug}`} style="color:#fff;">{a.titulo}</a></h3>
+              <h3 style="margin:14px 0 10px; font-size:1.08rem;"><a href={ruta(`/actualidad/${a.slug}`)} style="color:#fff;">{a.titulo}</a></h3>
               <p style="color:rgba(255,255,255,.75);font-size:.93rem;flex:1;">{a.descripcion}</p>
               <p style="color:rgba(255,255,255,.5);font-size:.8rem;margin-top:12px;">{a.fecha} · {a.tiempoLectura} de lectura</p>
-              <a href={`/actualidad/${a.slug}`} style="color:#f0c56a;font-weight:600;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;margin-top:14px;">
+              <a href={ruta(`/actualidad/${a.slug}`)} style="color:#f0c56a;font-weight:600;font-size:.88rem;display:inline-flex;align-items:center;gap:6px;margin-top:14px;">
                 Leer artículo <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
               </a>
             </div>
@@ -131,7 +132,7 @@ const ultimosArticulos = [...articulosBlog.articulos]
       </div>
 
       <div class="reveal" style="margin-top:44px;">
-        <a href="/actualidad" class="btn btn-light">Ver más actualidad</a>
+        <a href={ruta("/actualidad")} class="btn btn-light">Ver más actualidad</a>
       </div>
     </div>
   </section>
@@ -159,7 +160,7 @@ const ultimosArticulos = [...articulosBlog.articulos]
       <h2 class="section-title reveal">{ctaFinal.titulo}</h2>
       <p class="lead reveal" style="margin-top:18px;">{ctaFinal.texto}</p>
       <div class="reveal" style="margin-top:36px;">
-        <a href={ctaFinal.botonHref} class="btn btn-primary" style="font-size:1.05rem; padding:17px 38px;">{ctaFinal.botonTexto}</a>
+        <a href={ruta(ctaFinal.botonHref)} class="btn btn-primary" style="font-size:1.05rem; padding:17px 38px;">{ctaFinal.botonTexto}</a>
       </div>
     </div>
   </section>
