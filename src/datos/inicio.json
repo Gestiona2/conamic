@@ -1,12 +1,12 @@
 {
   "_comentario": "Contenido de la página de inicio. Fuente: insumos/negocio/01-evolucion-contenido-web.txt",
   "meta": {
-    "titulo": "CONAMIC — El 99.6% de Colombia se levanta aquí",
+    "titulo": "CONAMIC — El 80% de Colombia se levanta aquí",
     "descripcion": "Somos la base de la economía, el motor del empleo y la raíz de nuestra tierra. En CONAMIC, tu esfuerzo individual se convierte en poder colectivo."
   },
   "portada": {
     "encabezado": "Confederación Nacional de Empresarios de la Microempresa",
-    "titulo": "El 99.6% de Colombia",
+    "titulo": "El 80% de Colombia",
     "tituloAcento": "se levanta aquí.",
     "texto": "Somos la base de la economía, el motor del empleo y la raíz de nuestra tierra. En CONAMIC, tu esfuerzo individual se convierte en poder colectivo.",
     "botones": [
