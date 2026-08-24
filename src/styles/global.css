@@ -259,7 +259,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   display: flex; align-items: center; justify-content: space-between;
   gap: 20px; height: 76px;
 }
-.nav-logo img { height: 46px; width: auto; }
+.nav-logo img { height: 55px; width: auto; }
 .nav-links { display: flex; align-items: center; gap: 26px; }
 .nav-links a {
   font-family: var(--font-body); font-size: .93rem; font-weight: 500;
@@ -751,7 +751,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (max-width: 640px)  {
   .pad { padding-top: 64px; padding-bottom: 64px; }
   .container { padding: 0 18px; }
-  .nav-logo img { height: 40px; }
+  .nav-logo img { height: 48px; }
   .grid-servicios, .grid-testimonios, .grid-articulos, .grid-cifras {
     grid-template-columns: 1fr;
   }
